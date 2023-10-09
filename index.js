@@ -2,15 +2,8 @@ import express from "express";
 import bodyParser from "body-parser";
 import { dirname } from "path";
 import { fileURLToPath } from 'url';
-import fs from "fs";
-import http from "http";
 import path from "path";
-import ejs from 'ejs'; // Popraw import EJS
-
-
-
-
-
+import http from "http";
 
 
 
@@ -27,10 +20,10 @@ app.use(bodyParser.urlencoded({ extended: true })); //body-parser odczytuje wpis
 // Ustawienie EJS jako widoków (szablonów) dla aplikacji Express
 app.set('view engine', 'ejs');
 // Określenie katalogu, w którym znajdują się pliki szablonów EJS
-app.set('views', __dirname + '/index.ejs');
+app.set('public', __dirname + '/index.ejs');
 
 function passwordCheck(req, res, next) {
-  const password = req.body["password"]; //dodajemy password taj jak  w HTML
+  const password = req.body["password"]; //dodajemy password tak jak  w HTML
   if (password === "Olivia16") {
     isUserAuthorized = true;
   }
@@ -39,32 +32,23 @@ function passwordCheck(req, res, next) {
 app.use(passwordCheck);
 
 // Routing i renderowanie widoku EJS
+//home page
 app.get('/', (req, res) => {
-  res.render('public', { pageTitle: 'Dobry fachowiec' });
+  const data = {
+    zawody:[],
+  }
+  res.render('index.ejs',data);
 });
-// app.get('/', function(req, res, next){
-//   // Serve the index.html file in the root directory of the website.
-//   res.sendFile(path.join('/indexy/index.html'));
-// }); 
+app.get("/header", (req, res) => {
+  res.render("header.ejs")
+});
 
 
-// app.post("/submit", (req, res) => {
-//   const formData = `Password: ${req.body.password}`;
 
-//   fs.writeFile("submit.txt", formData, (error) => {
-//     if (error) {
-//       console.error("An error occurred:", error);
-//       res.status(500).send("An error occurred while saving the data.");
-//     } else {
-//       console.log("The file has been saved");
-//       res.status(200).send("Form data has been saved.");
-//     }
-//   });
-// });
 
 app.post("/submit", (req, res) => {
   if (isUserAuthorized) {
-    res.sendFile(__dirname + "/public/footer.ejs"); //login prawdziwy
+    res.sendFile(__dirname + "/public/header.ejs"); //login prawdziwy
   } else {
     res.sendFile(__dirname + "/public/index.html");// login falszywy
     //Alternatively res.redirect("/");  mozesz to uzyc zanmiennnie
@@ -78,11 +62,6 @@ app.listen(port, () => {
 });
 
 
-app.post("/submit", (req, res) =>{
-  res.render("index.ejs"),
-  {name: req.body["name"] }
-
-});
 
 
 
@@ -90,39 +69,8 @@ app.post("/submit", (req, res) =>{
 
 
 
-// const questions = [
-//   {
-//     type: 'list',
-//     name: 'Fachowiec',
-//     message: 'Wybierz swojego fachowca:',
-//     choices: [
-//       'Hydraulik',
-//       'Mechanik',
-//       'Kominiarz',
-//       'Blacharz',
-//     ],
-//   },
-// ];
-
-// inquirer.prompt(questions).then(answers => {
-//   console.log(`Twoim fachowcem jest ${answers.Fachowiec}.`);
-// });
 
 
 
 
 
-
-// let numberOfButtons = document.querySelectorAll(".button").length;
-
-// for (let i = 0; i < numberOfButtons; i++) {
-//     document.querySelectorAll(".button")[i].addEventListener("click", function() {
-//         let buttonInnerHTML = this.innerHTML;
-//         switch(buttonInnerHTML){
-//             case "Szukaj fachowca":
-//             let muzyka = new Audio("sound/song_1.mp3");
-//             muzyka.play();
-//             break;
-//         }
-//     });
-// }

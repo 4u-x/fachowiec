@@ -1,5 +1,2594 @@
-<body>
-    <h1>
-        hello <%= name %>
-    </h1>
-</body>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Lista zawodow</title>
+    </head>
+    <body>
+        <ul>
+            <% items.forEach((zawody) => { %>
+                <li>
+                    <%= zawody %>
+                </li>
+            <% }); %>
+        </ul>
+        
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const zawody =[
+Administrator baz danych
+242111 Administrator bezpieczeństwa informacji
+333403 Administrator nieruchomości
+242101 Administrator produkcji filmowej
+351401 Administrator stron internetowych
+252201 Administrator systemów komputerowych
+351402 Administrator systemów poczty elektronicznej
+252202 Administrator zintegrowanych systemów zarządzania
+261101 Adwokat
+333101 Agent celny
+333401 Agent do spraw pozyskiwania gruntów
+332301 Agent do spraw zakupów
+333102 Agent klarujący
+332101 Agent ubezpieczeniowy
+211303 Agrochemik
+334301 Akredytowany asystent parlamentarny
+343501 Akrobata
+265501 Aktor
+343502 Aktor cyrkowyS
+265502 Aktor lalkarz
+343601 Aktor scen muzycznychS
+212001 Aktuariusz
+323001 Akupunkturzysta
+524301 Akwizytor
+713301 Alpinista przemysłowy
+252102 Analityk baz danych
+242112 Analityk biznesowy
+241306 Analityk finansowy
+241301 Analityk giełdowy
+262201 Analityk informacji i raportów medialnych
+241311 Analityk inwestycyjny
+241302 Analityk kredytowy
+242301 Analityk pracy
+262202 Analityk ruchu na stronach internetowych
+252301 Analityk sieci komputerowych
+251101 Analityk systemów teleinformatycznych
+243101 Analityk trendów rynkowych (cool hunter)
+235101 Andragog
+235916 Animator czasu wolnego młodzieży (pracownik młodzieżowy)
+242201 Animator gospodarczy do spraw przedsiębiorczości
+242202 Animator gospodarczy do spraw rozwoju regionalnego
+343901 Animator kulturyS
+422701 Ankieter
+263205 Antropolog
+INDEKS ALFABETYCZNY ZAWODÓW i SPECJALNOŚCI
+ ujętych w klasyfikacji zawodów i specjalności na potrzeby rynku pracy wprowadzonej rozporządzeniem
+Ministra Pracy i Polityki Społecznej z dnia 7 sierpnia 2014 r. (Dz. U. z 28. 08. 2014 r. , poz. 1145).
+Rozporządzenie wejdzie w życie z dniem 1 stycznia 2015 r. Literą "S" oznaczone zostały zawody szkole ujęte w
+klasyfikacji zawodów szkolnictwa zawodowego.
+Niniejszy dokument nie jest źródłem obowiązującego prawa i ma wyłącznie charakter pomocniczy. Wiążący tekst aktu prawnego został opublikowany
+w Dzienniku Ustaw.
+ 1
+522101 Antykwariusz
+813101 Aparatowy procesów chemicznych
+816001 Aparatowy produkcji drożdży
+816002 Aparatowy produkcji octu
+814101 Aparatowy produkcji wyrobów maczanych
+263201 Archeolog
+216101 Architekt
+216201 Architekt krajobrazu
+251301 Architekt stron internetowych
+216102 Architekt wnętrz
+216202 Architekt zieleni wewnątrz budynków
+262101 Archiwista
+441401 Archiwista dokumentów elektronicznych
+441402 Archiwista zakładowy
+731801 Arkadownik
+323013 Arteterapeuta
+265101 Artysta fotografik
+265102 Artysta grafik
+265103 Artysta malarz
+265104 Artysta rzeźbiarz
+211101 Astrofizyk
+516101 Astrolog
+211102 Astronom
+431101 Asystent do spraw księgowości
+331401 Asystent do spraw statystyki
+441901 Asystent do spraw wydawniczych
+334302 Asystent dyrektora
+531203 Asystent edukacji romskiej
+343902 Asystent kierownika produkcji filmowej / telewizyjnejS
+531201 Asystent nauczyciela dziecka cudzoziemca
+531202 Asystent nauczyciela przedszkola
+531204 Asystent nauczyciela w szkole
+352101 Asystent operatora dźwięku
+352102 Asystent operatora obrazu
+516902 Asystent osobisty (concierge)
+341201 Asystent osoby niepełnosprawnejS
+334303 Asystent parlamentarny
+261901 Asystent prawny
+261902 Asystent prokuratora
+331404 Asystent przetwarzania danych
+265401 Asystent reżysera filmowego
+341207 Asystent rodziny
+261903 Asystent sędziego
+352103 Asystent techniczny realizatora dźwięku
+352104 Asystent techniczny realizatora programu
+421101 Asystent usług pocztowych
+421102 Asystent usług telekomunikacyjnych
+334304 Asystent zarządu
+532906 Asystentka kobiety w czasie ciąży i porodu (doula)
+325101 Asystentka stomatologicznaS
+229401 Audiofonolog
+242204 Audytor
+213301 Audytor środowiskowy
+214901 Audytor energetyczny
+742101 Automatyk sterowania ruchem kolejowym
+243102 Autor tekstów i sloganów reklamowych (copywriter)
+ 2
+B
+613001 Baca
+962101 Bagażowy
+753701 Bandażysta ortopedyczny
+513201 Barista
+513202 Barman
+752201 Bednarz
+711401 Betoniarz
+711402 Betoniarz-zbrojarzS
+343301 BibliotekarzS
+262203 Bibliotekoznawca
+241101 Biegły rewident
+753101 Bieliźniarz
+753401 Bieliźniarz-kołdrzarz
+962901 Bileter
+213102 Biochemik
+323002 Bioenergoterapeuta
+213103 Biofizyk
+213109 Bioinformatyk
+213104 Bioinżynier
+213105 Biolog
+323003 Biomasażysta
+213106 Biotechnolog
+721302 Blacharz budowlany
+721303 Blacharz izolacji przemysłowychS
+721304 Blacharz lotniczy
+721305 Blacharz okrętowy
+721301 BlacharzS
+721306 Blacharz samochodowyS
+265902 Blogier / vloger
+315202 Bosman portu
+835006 Bosman żeglugi śródlądowej
+962102 Boy hotelowy
+721101 Brązownik
+242401 Broker edukacyjny
+262204 Broker informacji (researcher)
+332103 Broker reasekuracyjny
+332104 Broker ubezpieczeniowy
+711205 Brukarz
+524901 Bukieciarz
+421201 Bukmacher
+731301 Bursztyniarz
+C
+731601 Cechowacz skal i znaków na szkle oraz na wyrobach z metali
+311901 Cechowniczy
+731401 Ceramik wyrobów ceramiki budowlanej
+731402 Ceramik wyrobów użytkowych i ozdobnych
+514201 Charakteryzator
+211301 Chemik
+211302 Chemik – technologia chemiczna
+323004 Chiropraktyk
+611301 Chirurg pielęgniarz drzew
+753601 Cholewkarz
+265301 Choreograf
+ 3
+812101 Ciągacz rur
+711501 CieślaS
+711502 Cieśla szalunkowy
+751201 CukiernikS
+712201 Cykliniarz
+912901 Czyściciel basenów pływackich
+951001 Czyściciel butów
+912902 Czyściciel dywanów
+713302 Czyściciel elewacji budowlanych
+912201 Czyściciel pojazdów
+D
+331101 Dealer aktywów finansowych
+712101 DekarzS
+343201 Dekorator sklepów
+343202 Dekorator wnętrz
+751202 Dekorator wyrobów cukierniczych
+212003 Demograf
+524201 Demonstrator wyrobów
+341101 Detektyw prywatny
+311401 Diagnosta kolejowy
+227101 Diagnosta laboratoryjny
+227201 Diagnosta laboratoryjny – specjalista cytomorfologii medycznej
+227202 Diagnosta laboratoryjny – specjalista epidemiologii
+227203 Diagnosta laboratoryjny – specjalista laboratoryjnej diagnostyki medycznej
+227204 Diagnosta laboratoryjny – specjalista laboratoryjnej genetyki sądowej
+227205 Diagnosta laboratoryjny – specjalista laboratoryjnej genetyki medycznej
+227206 Diagnosta laboratoryjny – specjalista laboratoryjnej hematologii medycznej
+227207 Diagnosta laboratoryjny – specjalista laboratoryjnej immunologii medycznej
+227208 Diagnosta laboratoryjny – specjalista laboratoryjnej parazytologii medycznej
+227209 Diagnosta laboratoryjny – specjalista laboratoryjnej toksykologii medycznej
+227210 Diagnosta laboratoryjny – specjalista laboratoryjnej transfuzjologii medycznej
+227211 Diagnosta laboratoryjny – specjalista mikrobiologii medycznej
+227212 Diagnosta laboratoryjny – specjalista zdrowia publicznego
+227213 Diagnosta laboratoryjny – specjalista zdrowia środowiskowego
+227214 Diagnosta laboratoryjny – specjalista laboratoryjnej toksykologii sądowej
+311501 Diagnosta uprawniony do wykonywania badań technicznych pojazdów
+322001 Dietetyk
+722401 Docieracz-polerowacz
+612101 Dojarz
+333109 Doradca do spraw bezpieczeństwa przewozu koleją towarów niebezpiecznych (Doradca RID)
+242205 Doradca do spraw bezpieczeństwa w transporcie towarów niebezpiecznych
+241205 Doradca do spraw leasingu
+261909 Doradca do spraw odszkodowań
+333404 Doradca do spraw rynku nieruchomości
+343304 Doradca do spraw zasobów bibliotecznych
+241201 Doradca emerytalny
+242302 Doradca EURES
+241202 Doradca finansowy
+241203 Doradca inwestycyjny
+524902 Doradca klienta
+242303 Doradca personalny
+241204 Doradca podatkowy
+213201 Doradca rolniczy
+242304 Doradca zawodowy
+933201 Dorożkarz
+ 4
+962103 Dostawca potraw
+962902 Dozorca
+711602 Dróżnik obchodowy
+831201 Dróżnik przejazdowy
+732201 DrukarzS
+732202 Drukarz sitodrukowy
+732203 Drukarz tkanin
+621001 Drwal / pilarz drzew
+263601 Duchowny religii mojżeszowej
+263602 Duchowny religii muzułmańskiej
+263605 Duchowny wyznania ewangelickiego
+263603 Duchowny wyznania prawosławnego
+263604 Duchowny wyznania rzymskokatolickiego
+235901 Dydaktyk multimedialny
+134901 Dyrektor aresztu śledczego / zakładu karnego
+121301 Dyrektor departamentu
+112001 Dyrektor do spraw administracyjnych
+112002 Dyrektor do spraw badawczo-rozwojowych
+112003 Dyrektor do spraw energetyki
+112004 Dyrektor do spraw informatyki / informacji
+112005 Dyrektor do spraw personalnych
+112020 Dyrektor do spraw wdrożeń i rozwoju technologii
+112006 Dyrektor finansowy
+112007 Dyrektor generalny
+112008 Dyrektor handlowy
+112009 Dyrektor logistyki
+112010 Dyrektor marketingu
+112011 Dyrektor operacyjny
+531108 Dzienny opiekun małego dziecka
+134106 Dyrektor ośrodka adopcyjnego
+134107 Dyrektor placówki opiekuńczo - wychowawczej
+112012 Dyrektor produkcji
+112013 Dyrektor rozwoju biznesu
+112014 Dyrektor sprzedaży
+134501 Dyrektor szkoły
+112015 Dyrektor techniczny
+112016 Dyrektor wykonawczy
+134902 Dyrektor zakładu dla nieletnich
+265203 Dyrygent
+315401 Dyspozytor lotniczy
+432301 Dyspozytor radio taxi
+831202 Dyspozytor ruchu metra
+432302 Dyspozytor transportu samochodowego
+951002 Dystrybutor ulotek
+831204 Dyżurny ruchu
+831212 Dyspozytor ruchu kolejowego
+831203 Dyżurny ruchu i stacji metra
+134502 Dziekan
+264201 Dziennikarz
+731802 Dziewiarz
+962104 Dźwigowy (windziarz)
+342101 Dżokej
+E
+325501 Edukator ekologiczny
+264101 Edytor materiałów źródłowych
+ 5
+722201 Eguterzysta
+235902 Egzaminator on-line
+235903 Egzaminator osób ubiegających się o uprawnienia do kierowania pojazdem
+741104 Elektryk budowlany
+213302 Ekolog
+263101 Ekonometryk
+263102 Ekonomista
+441201 Ekspedient pocztowy
+524903 Ekspedient w punkcie usługowym
+524905 Ekspedient w stacji obsługi pojazdów
+432101 Ekspedient wypożyczalni
+432303 Ekspedytor
+524401 Ekspedytor sprzedaży wysyłkowej / internetowej
+242206 Ekspert w Urzędzie Patentowym RP
+333103 Eksploatator portu
+332201 Ekspozytor towarów (merchandiser)
+313101 Elektroenergetyk elektrowni cieplnych
+313102 Elektroenergetyk elektrowni wodnych
+313103 Elektroenergetyk nastawni
+313104 Elektroenergetyk pomiarów i zabezpieczeń
+741202 Elektromechanik elektrycznych przyrządów pomiarowych
+741203 Elektromechanik pojazdów samochodowychS
+741201 ElektromechanikS
+741204 Elektromechanik sprzętu gospodarstwa domowego
+741205 Elektromechanik urządzeń chłodniczych
+741206 Elektromechanik urządzeń sterowania ruchem kolejowym
+741207 Elektromonter (elektryk) zakładowy
+741208 Elektromonter / konserwator urządzeń dźwignicowych
+741101 Elektromonter instalacji elektrycznych
+741301 Elektromonter linii kablowych
+741302 Elektromonter linii napowietrznych niskich i średnich napięć
+741303 Elektromonter linii napowietrznych wysokich i najwyższych napięć
+741209 Elektromonter lotniczy
+741210 Elektromonter maszyn elektrycznych
+741211 Elektromonter maszyn i urządzeń górnictwa odkrywkowego
+741212 Elektromonter maszyn i urządzeń górnictwa podziemnego
+741213 Elektromonter okrętowy
+741304 Elektromonter pogotowia elektroenergetycznego
+741214 Elektromonter prefabrykowanych stacji transformatorowych
+741102 Elektromonter reklam świetlnych
+741215 Elektromonter rozdzielni i podstacji trakcyjnych
+741305 Elektromonter sieci trakcyjnej
+741216 Elektromonter taboru szynowego
+741217 Elektromonter telekomunikacyjnych urządzeń zasilających
+741218 Elektromonter transformatorów
+741219 Elektromonter układów pomiarowych i automatyki zabezpieczeniowej
+741220 Elektromonter urządzeń sygnalizacyjnych
+229913 Elektroradiolog
+741103 ElektrykS
+229901 Epidemiolog
+263202 Etnograf
+235102 Ewaluator programów edukacji
+F
+731701 Fajkarz
+431102 Fakturzystka
+ 6
+228101 Farmaceuta
+228201 Farmaceuta – specjalista analityki farmaceutycznej
+228202 Farmaceuta – specjalista bromatologii
+228203 Farmaceuta – specjalista farmacji aptecznej
+228204 Farmaceuta – specjalista farmacji klinicznej
+228205 Farmaceuta – specjalista farmacji przemysłowej
+228206 Farmaceuta – specjalista farmacji szpitalnej
+228207 Farmaceuta – specjalista farmakologii
+228208 Farmaceuta – specjalista leku roślinnego
+228209 Farmaceuta – specjalista mikrobiologia i biotechnologia farmaceutyczna
+228210 Farmaceuta – specjalista toksykologii
+228211 Farmaceuta – specjalista zdrowia publicznego
+228212 Farmaceuta – specjalista zdrowia środowiskowego
+325901 Felczer
+264302 Filolog języka nowożytnego
+264301 Filolog klasyczny
+264303 Filolog polski
+263301 Filozof
+229201 Fizjoterapeuta
+211103 Fizyk
+211104 Fizyk medyczny
+835001 Flisak - retman
+343203 FlorystaS
+721102 Formierz odlewnik
+814201 Formierz wyrobów z kompozytów polimerowych
+814202 Formowacz ortopedycznych wyrobów z tworzyw
+731403 Formowacz ściernic
+731404 Formowacz wyrobów ceramicznych
+731501 Formowacz wyrobów szklanych
+264202 Fotoedytor
+732101 Fotograf poligraficzny
+343101 FotografS
+732102 Fotograf w drukarni filmowej
+343102 Fotoreporter
+343103 Fotosista
+343104 FototechnikS
+722301 Frezer
+752301 Frezer drewna
+514102 Fryzjer damski
+514103 Fryzjer męski
+514101 FryzjerS
+516401 Fryzjer zwierząt (groomer)
+541301 Funkcjonariusz Biura Ochrony Rządu
+335101 Funkcjonariusz celny
+335701 Funkcjonariusz służb specjalnych
+335601 Funkcjonariusz służby ochrony
+335602 Funkcjonariusz służby penitencjarnej
+335102 Funkcjonariusz straży granicznej
+541314 Funkcjonariusz staży ochrony kolei
+G
+731602 Galwanizer
+753502 Garbarz skór bez włosa
+753501 Garbarz skórS
+343903 Garderobiana
+751101 Garmażer
+ 7
+731405 Garncarz
+331501 Gemmolog
+213107 Genetyk
+211401 Geofizyk
+211402 Geograf
+211403 Geolog
+752202 Gięciarz drewna
+732103 Giloszer poligraficzny
+731603 Giloszer szkła
+712202 Glazurnik
+213202 Gleboznawca
+121101 Główny księgowy
+214111 Główny technolog
+962105 Goniec
+753102 Gorseciarka
+515301 Gospodarz domu
+515201 Gospodyni
+811301 Górnik eksploatacji otworowejS
+811101 Górnik eksploatacji podziemnejS
+811102 Górnik odkrywkowej eksploatacji złóżS
+931201 Grabarz
+216601 Grafik komputerowy DTP
+216602 Grafik komputerowy multimediów
+731611 Grawer
+732104 Grawer poligraficzny
+731604 Grawer szkła
+751501 Grzyboznawca
+H
+753301 Hafciarka
+811401 Hartowacz betonów i sylikatów
+812102 Hartownik
+325102 Higienistka stomatologicznaS
+325902 Higienistka szkolna
+263302 Historyk
+263303 Historyk sztuki
+612102 Hodowca bydła
+612201 Hodowca drobiu
+612111 Hodowca inwentarza mieszanego
+612301 Hodowca jedwabników
+612103 Hodowca koni
+612104 Hodowca owiec
+612902 Hodowca ptaków
+622101 Hodowca ryb
+612105 Hodowca trzody chlewnej
+612106 Hodowca zwierząt domowych
+612107 Hodowca zwierząt futerkowych
+612903 Hodowca zwierząt laboratoryjnych
+632001 Hodowca zwierząt pracujący na własne potrzeby
+323005 Homeopata
+516903 Hostessa
+731502 Hutnik dmuchacz szkła
+712601 Hydraulik
+211404 Hydrograf morski
+211405 Hydrolog
+211201 Hydrometeorolog
+ 8
+I
+216603 Ilustrator
+343504 Iluzjonista
+352105 Imitator efektów dźwiękowych
+752101 Impregnator drewna
+422501 Informator ruchu pasażerskiego
+315402 Informator służby informacji powietrznej
+315405 Informator lotniskowej służby informacji powietrznej
+251901 Informatyk medyczny
+421401 Inkasent
+325502 Inspektor bezpieczeństwa i higieny pracy
+315203 Inspektor bezpieczeństwa żeglugi
+311211 Inspektor budowlany
+311212 Inspektor budowy dróg
+311213 Inspektor budowy mostów
+335907 Inspektor do spraw miar i wag
+242207 Inspektor do spraw wytwarzania Głównego Inspektoratu Farmaceutycznego
+229101 Inspektor dozoru jądrowego
+214902 Inspektor dozoru technicznego
+242208 Inspektor farmaceutyczny
+515101 Inspektor hotelowy
+335905 Inspektor kontroli handlu i usług
+242209 Inspektor kontroli skarbowej
+242210 Inspektor nadzoru bankowego
+242211 Inspektor nadzoru budowlanego
+325513 Inspektor obrony cywilnej
+242212 Inspektor ochrony danych osobowych
+311214 Inspektor ochrony przeciwpożarowej
+325503 Inspektor ochrony radiologicznej
+242213 Inspektor rybołówstwa morskiego
+325504 Inspektor ochrony środowiska
+242214 Inspektor pracy
+325514 Inspektor sanitarny
+335909 Inspektor Inspekcji Transportu Drogowego
+343904 Inspicjent
+311402 Instalator systemów alarmowych
+311403 Instalator systemów alarmowych przeciwkradzieżowych
+311404 Instalator systemów telewizji przemysłowej
+235501 Instruktor amatorskiego ruchu artystycznego
+342301 Instruktor fitness
+342302 Instruktor gimnastyki korekcyjnej
+325505 Instruktor higieny
+323006 Instruktor hipoterapii
+342303 Instruktor jazdy konnej
+516502 Instruktor nauki jazdy
+342304 Instruktor odnowy biologicznej
+342305 Instruktor rekreacji ruchowej
+342306 Instruktor rytmiki
+342308 Instruktor sportów ekstremalnych
+342307 Instruktor sportów siłowych
+342201 Instruktor sportu
+342202 Instruktor sportu osób niepełnosprawnych
+754203 Instruktor strzałowy
+342309 Instruktor sztuki walki
+235502 Instruktor tańca
+ 9
+516501 Instruktor techniki jazdy
+325903 Instruktor terapii uzależnień
+265201 Instrumentalista
+515102 Intendent
+732302 Introligator galanteryjny
+732303 Introligator poligraficzny
+732301 IntroligatorS
+432102 Inwentaryzator
+214927 Inżynier akustyk
+214903 Inżynier automatyki i robotyki
+214904 Inżynier awionik
+214905 Inżynier biocybernetyki i inżynierii biomedycznej
+214201 Inżynier budownictwa – budowle i drogi wodne
+214202 Inżynier budownictwa – budownictwo ogólne
+214203 Inżynier budownictwa – budownictwo przemysłowe
+214204 Inżynier budownictwa – linie, węzły i stacje kolejowe
+214205 Inżynier budownictwa – urządzenia, instalacje i sieci energetyczne
+214206 Inżynier budownictwa – wyburzanie obiektów
+214412 Inżynier budownictwa okrętowego
+214207 Inżynier budowy dróg
+214208 Inżynier budowy mostów
+215101 Inżynier elektroenergetyk
+215102 Inżynier elektroenergetyk kolejowych sieci i podstacji trakcyjnych
+215201 Inżynier elektronik
+215103 Inżynier elektryk
+215104 Inżynier elektryk automatyk
+214906 Inżynier energetyk
+216501 Inżynier geodeta – fotogrametria i teledetekcja
+216502 Inżynier geodeta – geodezja górnicza
+216503 Inżynier geodeta – geodezja inżynieryjno-przemysłowa
+216504 Inżynier geodeta – geodezja urządzania terenów rolnych i leśnych
+216505 Inżynier geodeta – geodezyjne pomiary podstawowe i satelitarne
+216506 Inżynier geodeta – geomatyka
+216507 Inżynier geodeta – kataster i gospodarka nieruchomościami
+214608 Inżynier geofizyk – geofizyka górnicza
+214609 Inżynier geolog – geologia górnicza i poszukiwawcza
+214610 Inżynier geolog – hydrologia górnicza
+214209 Inżynier geotechnik
+214907 Inżynier gospodarki przestrzennej
+214601 Inżynier górnik – górnictwo otworowe
+214602 Inżynier górnik – górnictwo odkrywkowe
+214603 Inżynier górnik – górnictwo podziemne
+214604 Inżynier górnik – wiertnictwo
+214605 Inżynier hutnik
+214501 Inżynier inżynierii chemicznej
+214932 Inżynier inżynierii materiałowej
+214301 Inżynier inżynierii środowiska – gazowe urządzenia, instalacje i sieci energetyczne
+214302 Inżynier inżynierii środowiska – gospodarka wodna i hydrologia
+214303 Inżynier inżynierii środowiska – instalacje sanitarne
+214304 Inżynier inżynierii środowiska – melioracje
+214305 Inżynier inżynierii środowiska – oczyszczanie miast i gospodarka odpadami
+214306 Inżynier inżynierii środowiska – systemy wodociągowe i kanalizacyjne
+214908 Inżynier kliniczny
+213203 Inżynier leśnictwa
+214401 Inżynier mechanik – cieplno-mechaniczne urządzenia, instalacje i sieci energetyczne
+214402 Inżynier mechanik – maszyny i urządzenia do obróbki metali
+ 10
+214403 Inżynier mechanik – maszyny i urządzenia energetyczne
+214404 Inżynier mechanik – maszyny i urządzenia przemysłowe
+214405 Inżynier mechanik – mechanika precyzyjna
+214406 Inżynier mechanik – środki transportu
+214407 Inżynier mechanik – technologia mechaniczna
+214408 Inżynier mechanik lotniczy
+214409 Inżynier mechanizacji rolnictwa
+215202 Inżynier mechatronik
+214101 Inżynier normowania pracy
+214607 Inżynier odlewnik
+213204 Inżynier ogrodnictwa
+214102 Inżynier organizacji i planowania produkcji
+214909 Inżynier poligrafii
+214910 Inżynier pożarnictwa
+214929 Inżynier procesu malowania
+213205 Inżynier rolnictwa
+216401 Inżynier ruchu drogowego
+216402 Inżynier ruchu kolejowego
+213206 Inżynier rybactwa
+214410 Inżynier spawalnik
+243301 Inżynier sprzedaży
+243401 Inżynier sprzedaży technologii i usług teleinformatycznych
+214307 Inżynier systemów bezpieczeństwa jądrowego i ochrony radiologicznej
+252302 Inżynier systemów i sieci komputerowych
+214911 Inżynier systemów zabezpieczeń technicznych osób i mienia
+215105 Inżynier techniki świetlnej
+214912 Inżynier technologii betonów
+214913 Inżynier technologii ceramiki
+214502 Inżynier technologii chemicznej
+214914 Inżynier technologii drewna
+214915 Inżynier technologii przetwórstwa skóry
+214916 Inżynier technologii szkła
+214503 Inżynier technologii żywności
+215303 Inżynier teleinformatyk
+215301 Inżynier telekomunikacji
+214917 Inżynier transportu drogowego
+214918 Inżynier transportu kolejowego
+215106 Inżynier urządzeń i systemów energetyki odnawialnej
+215203 Inżynier urządzeń zabezpieczenia i sterowania ruchem kolejowym
+214103 Inżynier utrzymania ruchu
+214919 Inżynier włókiennik
+214104 Inżynier zaopatrzenia, transportu i magazynowania
+213207 Inżynier zootechniki
+J
+751102 Jeliciarz
+612108 Juhas
+K
+753702 KaletnikS
+711301 KamieniarzS
+753103 Kapelusznik-czapnik
+315204 Kapitan portu morskiego
+315205 Kapitan statku morskiego
+315207 Kapitan żeglugi przybrzeżnej
+315206 Kapitan żeglugi śródlądowej
+ 11
+751203 Karmelarz
+216508 Kartograf
+421103 Kasjer bankowy
+523001 Kasjer biletowy
+523002 Kasjer handlowy
+523003 Kasjer w zakładzie pracy
+421104 Kasjer walutowy
+343905 Kaskader filmowy
+343906 Kaskader filmowy – koordynator
+513101 KelnerS
+833101 Kierowca autobusu
+833201 Kierowca autocysterny
+834101 Kierowca ciągnika rolniczego
+833202 Kierowca ciągnika siodłowego
+831101 Kierowca drezyny i wózka motorowego
+831102 Kierowca lokomotywy spalinowej
+832201 Kierowca mechanik
+834401 Kierowca operator wózków jezdniowych (widłowych)
+833203 Kierowca samochodu ciężarowego
+832202 Kierowca samochodu dostawczego
+832203 Kierowca samochodu osobowego
+833102 Kierowca trolejbusu
+143101 Kierownik agencji do spraw usług sportowych / turystycznych / kulturalnych
+134601 Kierownik agencji doradztwa finansowego
+134906 Kierownik agencji filmowej / telewizyjnej
+134903 Kierownik agencji ochrony mienia i osób
+122201 Kierownik agencji reklamowej
+134602 Kierownik agencji ubezpieczeniowej
+142005 Kierownik apteki
+134907 Kierownik archiwum
+134908 Kierownik biblioteki
+334101 Kierownik biura
+143901 Kierownik biura podroży
+121102 Kierownik biura rachunkowego
+143902 Kierownik biura tłumaczeń
+132301 Kierownik budowy
+143903 Kierownik centrum handlowego
+143904 Kierownik centrum konferencyjnego
+143905 Kierownik centrum obsługi telefonicznej (kierownik call center)
+134101 Kierownik centrum rozrywki dla dzieci
+141203 Kierownik do spraw kateringu
+132102 Kierownik do spraw kontroli jakości
+122101 Kierownik do spraw marketingu
+122104 Kierownik do spraw marketingu internetowego
+122105 Kierownik do spraw marketingu sieciowego (wielopoziomowego)
+122301 Kierownik do spraw rozwoju produktu
+122102 Kierownik do spraw sprzedaży
+121302 Kierownik do spraw strategicznych i planowania
+143906 Kierownik do spraw windykacji
+143105 Kierownik domu kultury
+134402 Kierownik domu pomocy społecznej
+134301 Kierownik domu spokojnej starości
+121901 Kierownik działu administracyjno-gospodarczego
+122302 Kierownik działu badawczo-rozwojowego
+121103 Kierownik działu finansowego
+133001 Kierownik działu informatyki
+ 12
+121201 Kierownik działu kadr i płac
+132401 Kierownik działu logistyki
+134603 Kierownik działu operacji finansowych
+122202 Kierownik działu reklamy / promocji / public relations
+121202 Kierownik działu szkoleń
+132402 Kierownik działu transportu
+142001 Kierownik działu w handlu detalicznym
+142002 Kierownik działu w handlu hurtowym
+141101 Kierownik działu w hotelu
+134403 Kierownik działu w instytucjach pomocy społecznej
+141201 Kierownik działu w lokalu gastronomicznym
+133002 Kierownik działu w przedsiębiorstwie telekomunikacyjnym
+132201 Kierownik działu ruchu zakładu górniczego lub zakładu
+132403 Kierownik działu zakupów
+121203 Kierownik działu zarządzania zasobami ludzkimi
+134904 Kierownik firmy audytorskiej
+143907 Kierownik firmy sprzątającej
+134909 Kierownik galerii sztuki
+612202 Kierownik gospodarstwa hodowli drobiu
+611302 Kierownik gospodarstwa ogrodniczego
+613002 Kierownik gospodarstwa produkcji roślinnej i zwierzęcej
+612109 Kierownik gospodarstwa produkcji zwierzęcej
+611201 Kierownik gospodarstwa sadowniczego
+611401 Kierownik gospodarstwa upraw mieszanych
+611101 Kierownik gospodarstwa upraw polowych
+134201 Kierownik hospicjum
+141102 Kierownik hostelu / motelu
+141103 Kierownik hotelu
+142003 Kierownik hurtowni
+132202 Kierownik jednostki ratownictwa górniczego
+134905 Kierownik kancelarii prawnej
+522203 Kierownik kas
+143107 Kierownik kasyna
+143908 Kierownik kempingu
+143108 Kierownik kina
+143109 Kierownik klubu fitness
+143110 Kierownik klubu sportowego
+134202 Kierownik komórki organizacyjnej podmiotu leczniczego
+141202 Kierownik lokalu gastronomicznego
+132404 Kierownik magazynu
+132302 Kierownik małego przedsiębiorstwa budowlanego
+132104 Kierownik małego przedsiębiorstwa w przemyśle przetwórczym
+134910 Kierownik muzeum
+134404 Kierownik ośrodka pomocy rodzinie
+143112 Kierownik parku rozrywki / cyrku
+141104 Kierownik pensjonatu
+134605 Kierownik placówki bankowej
+134105 Kierownik placówki wsparcia dziennego
+134204 Kierownik podmiotu leczniczego
+343907 Kierownik planu filmowego
+511201 Kierownik pociągu
+754101 Kierownik prac podwodnych
+265410 Kierownik produkcji filmowej / telewizyjnej / radiowej
+131105 Kierownik produkcji w przedsiębiorstwie hodowlanym
+131104 Kierownik produkcji w przedsiębiorstwie ogrodniczym
+131101 Kierownik produkcji w przedsiębiorstwie rolnym
+ 13
+132103 Kierownik produkcji w przemyśle
+131201 Kierownik produkcji w zakładach akwakultury
+121904 Kierownik projektu
+133003 Kierownik przedsiębiorstwa informatycznego
+132405 Kierownik przedsiębiorstwa spedycyjnego
+121903 Kierownik przedsiębiorstwa świadczącego usługi osobiste i porządkowe
+122103 Kierownik przedsiębiorstwa świadczącego usługi z zakresu marketingu i sprzedaży
+121902 Kierownik przedsiębiorstwa świadczącego usługi z zakresu obsługi biznesu
+121204 Kierownik przedsiębiorstwa świadczącego usługi z zakresu zarządzania zasobami ludzkimi
+133004 Kierownik przedsiębiorstwa telekomunikacyjnego
+132406 Kierownik przedsiębiorstwa transportowego
+131102 Kierownik przedsiębiorstwa usługowego związanego z leśnictwem
+131202 Kierownik przedsiębiorstwa w rybołówstwie
+134102 Kierownik przedszkola
+132408 Kierownik punktu skupu
+134914 Kierownik rewiru / posterunku policji
+133005 Kierownik rozwoju technologii informatycznych
+133006 Kierownik rozwoju technologii telekomunikacyjnych
+132204 Kierownik ruchu zakładu górniczego lub zakładu
+522201 Kierownik sali sprzedaży
+133007 Kierownik sieci informatycznych
+143114 Kierownik siłowni
+142004 Kierownik sklepu / supermarketu
+522202 Kierownik stoiska w markecie
+143117 Kierownik szkoły tańca
+143115 Kierownik szkółki jeździeckiej
+143116 Kierownik teatru
+132105 Kierownik utrzymania ruchu
+131103 Kierownik w gospodarce leśnej
+134503 Kierownik warsztatów szkolnych
+143910 Kierownik / właściciel stacji paliw
+143911 Kierownik / właściciel szkoły jazdy
+143909 Kierownik / właściciel zakładu usługowego
+134104 Kierownik żłobka / klubu dziecięcego
+833103 Kierujący tramwajem (motorniczy)
+352106 Kinooperator
+522102 Kioskarz
+751502 Klasyfikator dziczyzny i ptactwa
+213208 Klasyfikator gruntów
+751503 Klasyfikator grzybów
+751504 Klasyfikator jaj, drobiu i pierza
+751505 Klasyfikator ryb
+753503 Klasyfikator skór
+754301 Klasyfikator wyrobów przemysłowych
+343503 Klaun (clown)
+211204 Klimatolog
+441301 Kodowacz (koder)
+962106 Kolporter
+752203 Kołodziej
+834102 Kombajnista (kierowca kombajnu)
+134911 Komendant policji (powiatowy, miejski, rejonowy, komisariatu)
+134913 Komendant powiatowy / miejski państwowej straży pożarnej
+265601 Komentator sportowy
+134912 Komendant straży gminnej / miejskiej
+343505 Komik
+713303 KominiarzS
+ 14
+261904 Komornik sądowy
+265204 Kompozytor
+732105 Komputerowy składacz tekstu
+511202 Konduktor
+511203 Konduktor kolei linowej
+821901 Konfekcjoner wyrobów gumowych
+265602 Konferansjer
+711101 Konserwator budynków i stanu technicznego pomieszczeń
+932901 Konserwator części / sprzętu
+265105 Konserwator dzieł sztuki
+351201 Konserwator sieci i systemów komputerowych
+753504 Konserwator skór surowych
+265107 Konserwator zabytków architektury
+214411 Konstruktor form wtryskowych
+753201 Konstruktor odzieży
+432305 Konstruktor rozkładów jazdy
+524302 Konsultant / agent sprzedaży bezpośredniej
+242305 Konsultant do spraw kariery
+251102 Konsultant do spraw systemów teleinformatycznych
+214105 Konsultant komitetu technicznego
+511204 Kontroler biletów
+241107 Kontroler finansowy
+325506 Kontroler higieny mięsa
+311902 Kontroler jakości połączeń spawanych
+314401 Kontroler jakości produktów spożywczych
+311937 Kontroler jakości wyrobów przemysłowych
+214920 Kontroler kolejowy
+242215 Kontroler państwowy
+421105 Kontroler pocztowy
+313401 Kontroler (sterowniczy) procesów przeróbki ropy naftowej i gazu
+313301 Kontroler (sterowniczy) procesów w produkcji nawozów sztucznych
+313303 Kontroler (sterowniczy) reaktorów chemicznych
+313901 Kontroler (sterowniczy) robotów przemysłowych
+421106 Kontroler rozliczeń pieniężnych
+335201 Kontroler rozliczeń podatkowych
+315403 Kontroler ruchu lotniczego
+311503 Kontroler stanu technicznego pojazdów
+313304 Kontroler (sterowniczy) urządzeń destylacyjnych i rektyfikacyjnych
+313501 Kontroler (sterowniczy) urządzeń do ciągnienia i tłoczenia metali
+313305 Kontroler (sterowniczy) urządzeń do obróbki cieplnej chemikaliów
+313902 Kontroler (sterowniczy) urządzeń do produkcji papieru
+313502 Kontroler (sterowniczy) urządzeń do wytopu metali
+313306 Kontroler (sterowniczy) urządzeń filtrujących i oddzielających
+313307 Kontroler (sterowniczy) urządzeń koksowniczych
+313503 Kontroler (sterowniczy) urządzeń obróbki cieplnej metali
+313504 Kontroler (sterowniczy) urządzeń odlewniczych
+313505 Kontroler (sterowniczy) urządzeń walcowniczych
+511205 Konwojent (konduktor) wagonów specjalnych
+229902 Koordynator badań klinicznych
+325904 Koordynator pobierania i przeszczepiania tkanek i narządów
+242102 Koordynator projektów unijnych
+263508 Koordynator rodzinnej pieczy zastępczej
+931202 Kopacz
+731208 Korektor (naprawiacz) instrumentów muzycznych
+311903 Korektor i stroiciel instrumentów muzycznych
+441302 Korektor tekstu
+ 15
+235917 Korepetytor
+731803 Koronkarka
+229903 Kosmetolog
+514202 Kosmetyczka
+216302 Kostiumograf
+311201 Kosztorysant budowlany
+731702 Koszykarz-plecionkarzS
+515302 Kościelny
+722101 KowalS
+722102 Kowal wyrobów zdobniczych
+753104 Kożusznik
+811402 Krajacz materiałów budowlanych
+731503 Krajacz szkła
+753105 KrawiecS
+516301 Kremator
+753202 Krojczy
+421202 Krupier
+263206 Kryminolog
+264203 Krytyk artystyczny
+264206 Krytyk kulinarny
+331301 Księgowy
+512001 KucharzS
+263203 Kulturoznawca
+263501 Kurator sądowy
+441202 Kurier
+832101 Kurier motocyklowy
+753106 KuśnierzS
+323007 Kynoterapeuta (dogoterapeuta)
+L
+314101 Laborant mikrobiologiczny
+314102 Laborant biochemiczny
+311202 Laborant budowlany
+311101 Laborant chemiczny
+314201 Laborant nasiennictwa
+314103 Laborant w hodowli roślin
+324001 Laborant weterynaryjny
+932902 Lagowacz
+713202 Lakiernik proszkowy
+713201 LakiernikS
+713203 Lakiernik samochodowy
+713204 Lakiernik tworzyw sztucznych
+713205 Lakiernik wyrobów drzewnych
+835002 Latarnik
+214921 Legalizator
+261906 Legislator
+221101 Lekarz
+134207 Lekarz ordynator oddziału
+221102 Lekarz ze specjalizacją I stopnia
+221201 Lekarz – specjalista alergologii
+221202 Lekarz – specjalista anestezjologii i intensywnej terapii
+221203 Lekarz – specjalista angiologii
+221204 Lekarz – specjalista audiologii i foniatrii
+221205 Lekarz – specjalista balneologii i medycyny fizykalnej
+221206 Lekarz – specjalista chirurgii dziecięcej
+221207 Lekarz – specjalista chirurgii klatki piersiowej
+ 16
+221208 Lekarz – specjalista chirurgii naczyniowej
+221209 Lekarz – specjalista chirurgii ogólnej
+221210 Lekarz – specjalista chirurgii onkologicznej
+221211 Lekarz – specjalista chirurgii plastycznej
+221212 Lekarz – specjalista chirurgii szczękowo-twarzowej
+221213 Lekarz – specjalista chorób płuc
+221214 Lekarz – specjalista chorób wewnętrznych
+221215 Lekarz – specjalista chorób zakaźnych
+221216 Lekarz – specjalista dermatologii i wenerologii
+221217 Lekarz – specjalista diabetologii
+221218 Lekarz – specjalista diagnostyki laboratoryjnej
+221219 Lekarz – specjalista endokrynologii
+221220 Lekarz – specjalista epidemiologii
+221221 Lekarz – specjalista farmakologii klinicznej
+221222 Lekarz – specjalista gastroenterologii
+221223 Lekarz – specjalista genetyki klinicznej
+221224 Lekarz – specjalista geriatrii
+221225 Lekarz – specjalista ginekologii onkologicznej
+221226 Lekarz – specjalista hematologii
+221227 Lekarz – specjalista hipertensjologii
+221228 Lekarz – specjalista immunologii klinicznej
+221229 Lekarz – specjalista kardiochirurgii
+221230 Lekarz – specjalista kardiologii
+221231 Lekarz – specjalista kardiologii dziecięcej
+221232 Lekarz – specjalista medycyny nuklearnej
+221233 Lekarz – specjalista medycyny paliatywnej
+221234 Lekarz – specjalista medycyny pracy
+221235 Lekarz – specjalista medycyny ratunkowej
+221236 Lekarz – specjalista medycyny rodzinnej
+221237 Lekarz – specjalista medycyny sądowej
+221238 Lekarz – specjalista medycyny sportowej
+221239 Lekarz – specjalista medycyny transportu
+221240 Lekarz – specjalista mikrobiologii lekarskiej
+221241 Lekarz – specjalista nefrologii
+221242 Lekarz – specjalista neonatologii
+221243 Lekarz – specjalista neurochirurgii
+221244 Lekarz – specjalista neurologii
+221245 Lekarz – specjalista neurologii dziecięcej
+221246 Lekarz – specjalista neuropatologii
+221247 Lekarz – specjalista okulistyki
+221248 Lekarz – specjalista onkologii i hematologii dziecięcej
+221249 Lekarz – specjalista onkologii klinicznej
+221250 Lekarz – specjalista ortopedii i traumatologia narządu ruchu
+221251 Lekarz – specjalista otorynolaryngologii
+221252 Lekarz – specjalista otorynolaryngologii dziecięcej
+221253 Lekarz – specjalista patomorfologii
+221254 Lekarz – specjalista pediatrii
+221255 Lekarz – specjalista położnictwa i ginekologii
+221256 Lekarz – specjalista psychiatrii
+221257 Lekarz – specjalista psychiatrii dzieci i młodzieży
+221258 Lekarz – specjalista radiologii i diagnostyki obrazowej
+221259 Lekarz – specjalista radioterapii onkologicznej
+221260 Lekarz – specjalista rehabilitacji medycznej
+221261 Lekarz – specjalista reumatologii
+221262 Lekarz – specjalista seksuologii
+221263 Lekarz – specjalista toksykologii klinicznej
+ 17
+221264 Lekarz – specjalista transfuzjologii klinicznej
+221265 Lekarz – specjalista transplantologii klinicznej
+221266 Lekarz – specjalista urologii
+221267 Lekarz – specjalista urologii dziecięcej
+221268 Lekarz – specjalista zdrowia publicznego
+221269 Lekarz – specjalista chorób płuc dzieci
+221270 Lekarz – specjalista endokrynologii ginekologicznej i rozrodczości
+221271 Lekarz – specjalista endokrynologii i diabetologii dziecięcej
+221272 Lekarz – specjalista gastroenterologii dziecięcej
+221273 Lekarz – specjalista intensywnej terapii
+221274 Lekarz – specjalista medycyny lotniczej
+221275 Lekarz – specjalista medycyny morskiej i tropikalnej
+221276 Lekarz – specjalista nefrologii dziecięcej
+221277 Lekarz – specjalista pediatrii metabolicznej
+221278 Lekarz – specjalista perinatologii
+226101 Lekarz dentysta
+226102 Lekarz dentysta ze specjalizacją I stopnia
+226201 Lekarz dentysta – specjalista chirurgii stomatologicznej
+226202 Lekarz dentysta – specjalista chirurgii szczękowo-twarzowej
+226203 Lekarz dentysta – specjalista epidemiologii
+226204 Lekarz dentysta – specjalista ortodoncji
+226205 Lekarz dentysta – specjalista periodontologii
+226206 Lekarz dentysta – specjalista protetyki stomatologicznej
+226207 Lekarz dentysta – specjalista stomatologii dziecięcej
+226208 Lekarz dentysta – specjalista stomatologii zachowawczej z endodoncji
+226209 Lekarz dentysta – specjalista zdrowia publicznego
+225101 Lekarz weterynarii
+225201 Lekarz weterynarii – specjalista chirurgii weterynaryjnej
+225202 Lekarz weterynarii – specjalista chorób drobiu i ptaków ozdobnych
+225203 Lekarz weterynarii – specjalista chorób koni
+225204 Lekarz weterynarii – specjalista chorób owadów użytkowych
+225205 Lekarz weterynarii – specjalista chorób przeżuwaczy
+225206 Lekarz weterynarii – specjalista chorób psów i kotów
+225207 Lekarz weterynarii – specjalista chorób ryb
+225208 Lekarz weterynarii – specjalista chorób trzody chlewnej
+225209 Lekarz weterynarii – specjalista chorób zwierząt futerkowych
+225210 Lekarz weterynarii – specjalista chorób zwierząt nieudomowionych
+225211 Lekarz weterynarii – specjalista epizootiologii i administracji weterynaryjnej
+225212 Lekarz weterynarii – specjalista higieny zwierząt rzeźnych i żywności pochodzenia zwierzęcego
+225213 Lekarz weterynarii – specjalista prewencji weterynaryjnej i higieny pasz
+225214 Lekarz weterynarii – specjalista radiologii weterynaryjnej
+225215 Lekarz weterynarii – specjalista rozrodu zwierząt
+225216 Lekarz weterynarii – specjalista użytkowania i patologii zwierząt laboratoryjnych
+225217 Lekarz weterynarii – specjalista weterynaryjnej diagnostyki laboratoryjnej
+265603 Lektor dialogów filmowych i radiowych
+235301 Lektor języka obcego
+333902 Licytator
+932903 Liczarz
+242306 Lider klubu pracy
+331502 Likwidator szkód
+441203 Listonosz
+243202 Lobbysta
+229402 Logopeda
+721103 Ludwisarz
+731605 Lustrzarz
+721201 Lutowacz
+ 18
+Ł
+933301 Ładowacz
+961101 Ładowacz nieczystości płynnych
+961102 Ładowacz nieczystości stałych
+911201 Łazienkowa
+731703 Łubiankarz
+M
+432103 Magazynier
+912101 Maglarz
+332401 Makler giełd towarowych
+332402 Makler morski
+242103 Makler nadzorujący
+331102 Makler papierów wartościowych
+713101 Malarz-tapeciarz
+713102 Malarz budowlany
+713206 Malarz-lakiernik samolotowy
+713207 Malarz-lakiernik konstrukcji i wyrobów metalowych
+831205 Manewrowy
+831206 Manewrowy metra
+514203 Manikiurzystka
+752102 Manipulant drewna okrągłego
+723317 Marynarz motorzysta żeglugi śródlądowej
+835003 Marynarz statku morskiego
+835004 Marynarz żeglugi śródlądowej
+612110 Masztalerz
+831104 Maszynista
+313105 Maszynista agregatów prądotwórczych
+313202 Maszynista chłodni
+834301 Maszynista doku
+834302 Maszynista górniczych maszyn wyciągowych
+834303 Maszynista kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych
+818201 Maszynista kotła
+732204 Maszynista maszyn fleksograficznych
+732205 Maszynista maszyn offsetowych
+732206 Maszynista maszyn typograficznych
+732207 Maszynista maszyn wklęsłodrukowych
+834304 Maszynista obsługujący urządzenia do napełniania i opróżniania zbiorników
+831103 Maszynista pociągu metra
+831105 Maszynista pomocniczych pojazdów kolejowych metra
+834305 Maszynista specjalistycznych dźwignic kolejowych
+313203 Maszynista sprężarek
+313106 Maszynista turbozespołu parowego
+313107 Maszynista turbozespołu wodnego
+313108 Maszynista urządzeń ciepłowniczych elektrowni
+818202 Maszynista urządzeń nawęglania
+818203 Maszynista urządzeń odpopielania i odżużlania
+313109 Maszynista urządzeń pomocniczych elektrowni
+313204 Maszynista wentylatorów w kopalni
+413101 Maszynistka
+818121 Maszynowy szlifierz-polerowacz szkła
+751301 Maślarz
+212002 Matematyk
+723310 Mechanik-monter maszyn i urządzeńS
+723301 Mechanik / konserwator urządzeń do napełniania i opróżniania zbiorników
+ 19
+723302 Mechanik / konserwator urządzeń dźwignicowych
+723101 Mechanik autobusów
+731102 Mechanik automatyki przemysłowej i urządzeń precyzyjnychS
+723102 Mechanik ciągników
+315318 Mechanik lotniczy obsługi technicznej
+723303 Mechanik maszyn i urządzeń budowlanych i melioracyjnych
+723304 Mechanik maszyn i urządzeń do obróbki metali
+834201 Mechanik maszyn i urządzeń drogowychS
+723305 Mechanik maszyn i urządzeń górnictwa odkrywkowego
+723306 Mechanik maszyn i urządzeń górnictwa podziemnego
+723307 Mechanik maszyn i urządzeń przemysłowych
+723308 Mechanik maszyn rolniczych
+723309 Mechanik maszyn szwalniczych
+723107 Mechanik motocyklowyS
+723311 Mechanik okrętowy
+723201 Mechanik płatowców
+723103 Mechanik pojazdów samochodowychS
+315301 Mechanik pokładowy
+731103 Mechanik precyzyjnyS
+723104 Mechanik samochodów ciężarowych
+723105 Mechanik samochodów osobowych
+723202 Mechanik silników lotniczych
+723312 Mechanik silników spalinowych
+315101 Mechanik statkowy żeglugi śródlądowej
+723313 Mechanik taboru kolejowego
+712701 Mechanik urządzeń chłodniczych
+712702 Mechanik urządzeń klimatyzacyjnych
+723203 Mechanik wyposażenia lotniczego statków powietrznych
+834103 Mechanik-operator pojazdów i maszyn rolniczychS
+263502 Mediator
+263507 Mediator sądowy
+931203 Meliorant
+333901 Menedżer artystyczny
+342203 Menedżer dyscypliny sportu
+342204 Menedżer imprez sportowych
+343908 Menedżer klubu muzycznego
+243104 Menedżer marki (brand manager)
+243103 Menedżer produktu.(product manager)
+342205 Menedżer sportu
+262205 Menedżer zawartości serwisów internetowych
+731905 Metaloplastyk
+211202 Meteorolog
+235103 Metodyk edukacji na odległość
+235104 Metodyk technologii informacyjnych i komunikacyjnych
+214922 Metrolog
+213108 Mikrobiolog
+352107 Mikser dźwięku
+352108 Mikser obrazu
+265503 Mim
+312301 Mistrz produkcji w budownictwie drogowym
+312302 Mistrz produkcji w budownictwie kolejowym
+312303 Mistrz produkcji w budownictwie mostowym
+312304 Mistrz produkcji w budownictwie ogólnym
+312305 Mistrz produkcji w budownictwie przemysłowym
+312306 Mistrz produkcji w budownictwie wodnym
+312210 Mistrz produkcji w poligrafii
+ 20
+312201 Mistrz produkcji w przemyśle chemicznym
+312202 Mistrz produkcji w przemyśle drzewnym
+312203 Mistrz produkcji w przemyśle elektromaszynowym
+312204 Mistrz produkcji w przemyśle elektronicznym
+312205 Mistrz produkcji w przemyśle farmaceutycznym
+312206 Mistrz produkcji w przemyśle metalurgicznym
+312207 Mistrz produkcji w przemyśle samochodowym
+312208 Mistrz produkcji w przemyśle spożywczym
+312209 Mistrz produkcji w przemyśle włókienniczym
+751401 Młynarz
+721104 Modelarz odlewniczyS
+731406 Modelarz odlewnik gipsowych form roboczych
+731704 Modelarz wyrobów plecionkarskich
+524101 Modelka / model
+753107 Modystka
+732106 Moletownik
+711901 Montażysta dekoracji
+352109 Montażysta dźwięku
+352110 Montażysta obrazu
+732107 Montażysta reprodukcyjny
+723314 Monter-instalator urządzeń technicznych w budownictwie wiejskim
+721501 Monter / konserwator kolei linowych, wyciągów narciarskich i zjeżdżalni grawitacyjnych
+723315 Monter / konserwator urządzeń przeciwpożarowych
+742113 Monter / konserwator urządzeń zabezpieczeń technicznych osób i mienia
+712703 Monter / konserwator instalacji wentylacyjnych i klimatyzacyjnych
+712501 Monter / składacz okien
+821101 Monter aparatów i przyrządów optycznych
+821102 Monter aparatury i urządzeń chemicznych
+821301 Monter aparatury i urządzeń techniki jądrowej
+821201 Monter aparatury rozdzielczej i kontrolnej energii elektrycznej
+721401 Monter bram
+711701 Monter budownictwa wodnegoS
+821302 Monter elektronicznego wyposażenia maszyn i urządzeń
+742103 Monter-elektronik – aparatura medyczna
+742104 Monter-elektronik – aparatura pomiarowa
+742105 Monter-elektronik – elektroniczne instrumenty muzyczne
+742106 Monter-elektronik – elektroniczny sprzęt sygnalizacyjny i systemy sygnalizacyjne
+742204 Monter-elektronik – instalacja anten
+742108 Monter-elektronik – naprawa sprzętu audiowizualnego
+742205 Monter-elektronik – sprzęt komputerowy
+742110 Monter-elektronik – układy elektroniczne automatyki przemysłowej
+742206 Monter-elektronik – urządzenia radiokomunikacyjne
+742207 Monter-elektronik – urządzenia radiowo-telewizyjne
+821303 Monter elektroniki samochodowej
+821202 Monter elektrycznego sprzętu gospodarstwa domowego
+821203 Monter elektrycznych przyrządów pomiarowych
+712304 Monter fasad
+731202 Monter fortepianów i pianin
+712603 Monter instalacji gazowych
+712617 Monter instalacji gazów medycznych
+712604 Monter instalacji i urządzeń sanitarnych
+742201 Monter instalacji i urządzeń telekomunikacyjnych (telemonter)
+731205 Monter instrumentów muzycznych
+712401 Monter izolacji budowlanychS
+712402 Monter izolacji chemoodpornych i antykorozyjnych
+712403 Monter izolacji przemysłowychS
+ 21
+721402 Monter kadłubów okrętowychS
+711201 Monter kamiennych elementów budowlanych
+721403 Monter konstrukcji aluminiowych
+711102 Monter konstrukcji budowlanychS
+721502 Monter konstrukcji linowych stałych
+721404 Monter konstrukcji stalowych
+821103 Monter kotłów i armatury kotłowej
+821204 Monter maszyn elektrycznych
+821104 Monter maszyn i urządzeń okrętowych
+821105 Monter maszyn i urządzeń przemysłowych
+821902 Monter mebli
+821106 Monter mechanizmów i przyrządów precyzyjnych
+742114 Monter mechatronikS
+711603 Monter nawierzchni kolejowejS
+821107 Monter obrabiarek
+712301 Monter ociepleń budynków
+821205 Monter osprzętu elektrotechnicznego
+821108 Monter płatowców i śmigłowców
+712901 Monter płyt kartonowo-gipsowych
+821304 Monter podzespołów i zespołów elektronicznych
+821109 Monter pojazdów i urządzeń transportowych
+711902 Monter reklam
+712605 Monter rurociągów górniczych
+712606 Monter rurociągów okrętowych
+712607 Monter rurociągów przemysłowych
+711903 Monter rusztowań
+723106 Monter samochodowej instalacji gazowej (LPG)
+712608 Monter sieci cieplnych
+712609 Monter sieci deszczownianych
+712610 Monter sieci gazowych
+742202 Monter sieci i urządzeń telekomunikacyjnychS
+742203 Monter sieci telekomunikacyjnych
+712612 Monter sieci wodnych i kanalizacyjnych
+712616 Monter sieci, instalacji i urządzeń sanitarnychS
+821110 Monter silników spalinowych
+821111 Monter sprzętu gospodarstwa domowego
+821206 Monter sprzętu oświetleniowego i lamp elektrycznych
+821305 Monter sprzętu radiowego i telewizyjnego
+712906 Monter stolarki budowlanej
+712613 Monter systemów rurociągowychS
+712902 Monter systemów suchej zabudowy
+712506 Monter szkła budowlanego
+821112 Monter taboru szynowego
+821113 Monter układów hydraulicznych i pneumatycznych
+821114 Monter urządzeń chłodniczych i gastronomicznych
+712614 Monter urządzeń energetyki odnawialnej
+821115 Monter urządzeń laserowych
+821116 Monter urządzeń sterowania ruchem kolejowym
+742115 Monter urządzeń sterowania ruchem pociągów metra
+742116 Monter urządzeń zdalnego sterowania i kontroli dyspozytorskiej metra
+821207 Monter wiązek elektrycznych
+721503 Monter wiertni
+821904 Monter wyrobów tekstylnych, z tektury i pokrewnych materiałów
+821905 Monter wyrobów z drewna
+821906 Monter wyrobów z tworzyw sztucznych
+712905 Monter zabudowy i robót wykończeniowych w budownictwieS
+ 22
+821306 Monter zestrajacz urządzeń elektronicznych
+754901 Monter znaków nawigacyjnych
+754902 Monter żaluzji
+742102 Monter-elektronikS
+723401 Monter-mechanik rowerów / wózków
+311215 Mostowniczy
+723316 Motorzysta wachtowy
+711202 Murarz
+711204 Murarz-tynkarzS
+262102 Muzealnik
+343602 MuzykS
+265206 Muzykolog
+323008 Muzykoterapeuta
+752103 Mygłowacz
+N
+121303 Naczelnik / kierownik wydziału
+214923 Nanotechnolog (inżynier nanostruktur)
+933302 Napełniający zbiorniki przenośne
+831207 Nastawniczy
+323009 Naturopata
+235909 Nauczyciel specjalista terapii pedagogicznej
+232001 Nauczyciel / instruktor praktycznej nauki zawodu
+231001 Nauczyciel akademicki – nauki biologiczne
+231002 Nauczyciel akademicki – nauki chemiczne
+231003 Nauczyciel akademicki – nauki ekonomiczne
+231004 Nauczyciel akademicki – nauki farmaceutyczne
+231005 Nauczyciel akademicki – nauki fizyczne
+231006 Nauczyciel akademicki – nauki humanistyczne
+231007 Nauczyciel akademicki – nauki leśne
+231008 Nauczyciel akademicki – nauki matematyczne
+231009 Nauczyciel akademicki – nauki medyczne
+231010 Nauczyciel akademicki – nauki o kulturze fizycznej
+231011 Nauczyciel akademicki – nauki o Ziemi
+231012 Nauczyciel akademicki – nauki prawne
+231013 Nauczyciel akademicki – nauki rolnicze
+231014 Nauczyciel akademicki – nauki techniczne
+231015 Nauczyciel akademicki – nauki teologiczne
+231016 Nauczyciel akademicki – nauki weterynaryjne
+231017 Nauczyciel akademicki – nauki wojskowe
+231018 Nauczyciel akademicki – sztuki filmowe
+231019 Nauczyciel akademicki – sztuki muzyczne
+231020 Nauczyciel akademicki – sztuki plastyczne
+231021 Nauczyciel akademicki – sztuki teatralne
+235904 Nauczyciel bibliotekarz
+233001 Nauczyciel biologii
+233002 Nauczyciel chemii
+235918 Nauczyciel domowy
+235105 Nauczyciel doradca metodyczny
+233003 Nauczyciel etyki
+234101 Nauczyciel etyki w szkole podstawowej
+233004 Nauczyciel fizyki i astronomii
+233005 Nauczyciel geografii
+233006 Nauczyciel historii
+234102 Nauczyciel historii i społeczeństwa w szkole podstawowej
+233007 Nauczyciel informatyki / technologii informacyjnej
+ 23
+234103 Nauczyciel informatyki w szkole podstawowej
+235106 Nauczyciel instruktor
+233008 Nauczyciel języka obcego
+234104 Nauczyciel języka obcego w szkole podstawowej
+233012 Nauczyciel języka polskiego
+234108 Nauczyciel języka polskiego w szkole podstawowej
+235905 Nauczyciel konsultant
+235906 Nauczyciel logopeda
+233015 Nauczyciel matematyki
+234111 Nauczyciel matematyki w szkole podstawowej
+233016 Nauczyciel muzyki
+235401 Nauczyciel muzyki w placówkach pozaszkolnych
+234112 Nauczyciel muzyki w szkole podstawowej
+235907 Nauczyciel nauczania na odległość
+234113 Nauczyciel nauczania początkowego
+235202 Nauczyciel niedostosowanych społecznie (pedagog resocjalizacji socjoterapeuta)
+235201 Nauczyciel niesłyszących i słabosłyszących (surdopedagog)
+235203 Nauczyciel niewidomych i słabowidzących (tyflopedagog)
+233017 Nauczyciel plastyki
+234114 Nauczyciel plastyki w szkole podstawowej
+232002 Nauczyciel przedmiotów zawodowych artystycznych
+232003 Nauczyciel przedmiotów zawodowych ekonomicznych
+232004 Nauczyciel przedmiotów zawodowych medycznych
+232005 Nauczyciel przedmiotów zawodowych rolniczych i leśnych
+232006 Nauczyciel przedmiotów zawodowych technicznych
+232007 Nauczyciel przedmiotów zawodowych turystycznych
+233018 Nauczyciel przedsiębiorczości
+234201 Nauczyciel przedszkola
+235204 Nauczyciel przewlekle chorych i niepełnosprawnych ruchowo
+234115 Nauczyciel przyrody w szkole podstawowej
+233019 Nauczyciel przysposobienia obronnego
+235908 Nauczyciel psycholog
+233020 Nauczyciel religii
+234116 Nauczyciel religii w szkole podstawowej
+235503 Nauczyciel sztuki w placówkach pozaszkolnych
+233021 Nauczyciel techniki
+234117 Nauczyciel techniki w szkole podstawowej
+235601 Nauczyciel technologii informatycznych w placówkach pozaszkolnych
+235205 Nauczyciel upośledzonych umysłowo (oligofrenopedagog)
+235910 Nauczyciel w placówkach pozaszkolnych
+233022 Nauczyciel wiedzy o kulturze
+233023 Nauczyciel wiedzy o społeczeństwie
+233024 Nauczyciel wychowania do życia w rodzinie
+233025 Nauczyciel wychowania fizycznego
+234118 Nauczyciel wychowania fizycznego w szkole podstawowej
+315302 Nawigator lotniczy
+242104 Negocjator biznesowy
+335501 Negocjator policyjny
+229403 Neurologopeda
+214107 Normalizator
+962107 Noszowy
+261905 Notariusz
+754102 Nurek
+O
+313110 Obchodowy bloku
+ 24
+315210 Obserwator radarowy żeglugi śródlądowej
+753603 Obuwnik miarowy
+753604 Obuwnik ortopedyczny
+815605 Obuwnik przemysłowy
+753602 ObuwnikS
+211406 Oceanolog
+931204 Oczyszczacz kanalizacyjny (kanalarz)
+721405 Oczyszczacz konstrukcji stalowych
+962301 Odczytywacz liczników
+731407 Odlewnik wyrobów ceramicznych
+814203 Odlewnik wyrobów z materiałów polimerowych
+432304 Odprawiacz pociągów
+315102 Oficer automatyk okrętowy
+315103 Oficer mechanik
+315208 Oficer pokładowy
+315209 Oficer portu
+011001 Oficer sił zbrojnych
+611307 Ogrodnik – uprawa grzybów jadalnych
+611308 Ogrodnik – uprawa roślin ozdobnych
+611309 Ogrodnik – uprawa warzyw polowych
+611310 Ogrodnik – uprawy pod osłonami
+611304 Ogrodnik producent nasion
+611303 OgrodnikS
+611305 Ogrodnik szkółkarz
+611306 Ogrodnik terenów zieleni
+834307 Operator-mechanik wyciągarki szybowcowej
+313205 Operator (maszynista) stacji pomp
+812103 Operator agregatów do obróbki cieplnej
+815501 Operator agregatów natryskowych
+313201 Operator aparatury utylizacji odpadów toksycznych
+413102 Operator aplikacji komputerowych
+731410 Operator automatów ceglarskich i wapienno - piaskarskich
+818101 Operator automatów do formowania wyrobów szklanych
+722302 Operator automatycznej linii obróbki skrawaniem
+311904 Operator badań defektoskopowych
+351101 Operator bezprzewodowych sieci komputerowych
+311803 Operator CAD
+422301 Operator centrali telefonicznej
+834104 Operator ciągników zrywkowych do zrywki podwieszanej
+732108 Operator DTP
+352111 Operator dźwięku
+834306 Operator dźwignic linotorowych
+413103 Operator edytorów tekstu
+732109 Operator fotoskładu
+817101 Operator kalandrów wyrobów papierowych
+352112 Operator kamery
+351102 Operator komputerowych urządzeń peryferyjnych
+541316 Operator kontroli bezpieczeństwa
+834205 Operator koparki
+834206 Operator koparko-ładowarki
+732208 Operator kserokopiarek
+817102 Operator linii do belowania makulatury
+834207 Operator ładowarki
+912904 Operator maszyn czyszczących
+818102 Operator maszyn do formowania szkła płaskiego
+814301 Operator maszyn do lakierowania i laminowania przetworów papierowych
+ 25
+722303 Operator maszyn do obróbki skrawaniem
+812104 Operator maszyn do produkcji drutów i prętów
+814302 Operator maszyn do produkcji opakowań z papieru i tektury
+814303 Operator maszyn do produkcji papierowych artykułów piśmiennych
+814304 Operator maszyn do produkcji papierowych artykułów toaletowych i sanitarnych
+814305 Operator maszyn do produkcji papieru i tektury falistej
+813102 Operator maszyn do produkcji papy
+817201 Operator maszyn do produkcji płyt i sklejek
+814306 Operator maszyn do produkcji sznurka i tulei
+813103 Operator maszyn do produkcji taśm magnetycznych
+815901 Operator maszyn do produkcji włóknin i przędzin
+752302 Operator maszyn do produkcji wyrobów drewnianych
+722304 Operator maszyn do produkcji wyrobów z drutu, lin, siatek i kabli
+815101 Operator maszyn do przygotowania włókien
+834202 Operator maszyn drogowych
+815201 Operator maszyn dziewiarskich
+834203 Operator maszyn i sprzętu torowego
+815502 Operator maszyn i urządzeń chemicznej obróbki skór
+812105 Operator maszyn i urządzeń do obróbki plastycznejS
+811107 Operator maszyn i urządzeń do pozyskiwania torfu
+722305 Operator maszyn i urządzeń do produkcji łożysk tocznych
+814204 Operator maszyn i urządzeń do produkcji okien z tworzyw sztucznych
+722306 Operator maszyn i urządzeń do produkcji opakowań blaszanych
+811201 Operator maszyn i urządzeń do przerobu torfu
+811202 Operator maszyn i urządzeń do przeróbki mechanicznej rud
+811203 Operator maszyn i urządzeń do przeróbki mechanicznej węgla
+814209 Operator maszyn i urządzeń do przetwórstwa tworzyw sztucznychS
+811204 Operator maszyn i urządzeń do rozdrabniania i sortowania surowców mineralnych
+815503 Operator maszyn i urządzeń mechanicznej obróbki skór
+812106 Operator maszyn i urządzeń metalurgicznychS
+812107 Operator maszyn i urządzeń odlewniczychS
+816003 Operator maszyn i urządzeń przemysłu spożywczegoS
+818903 Operator maszyn i urządzeń wikliniarskich
+732304 Operator maszyn introligatorskich
+818301 Operator maszyn kopertujących
+814307 Operator maszyn krojących i wykrawających do papieru
+834105 Operator maszyn leśnychS
+834106 Operator maszyn ogrodniczych
+815102 Operator maszyn przędzalniczych
+815202 Operator maszyn przygotowawczych do wytwarzania płaskich wyrobów włókienniczych
+834107 Operator maszyn rolniczych
+815902 Operator maszyn tapicerskich
+815203 Operator maszyn tkackich
+811108 Operator maszyn urabiających i ładujących
+815204 Operator maszyn w przemyśle włókienniczymS
+815401 Operator maszyn wykończalniczych wyrobów włókienniczych
+813104 Operator maszyn zapałczanych
+817103 Operator maszyny odwadniającej celulozę
+817104 Operator maszyny papierniczej
+812108 Operator maszyny rozlewniczej
+817105 Operator maszyny tekturniczej
+813201 Operator minilabu fotograficznego
+834308 Operator mostu zwodzonego
+912202 Operator myjni
+834108 Operator nasiębiernych ciągników zrywkowych
+722307 Operator obrabiarek skrawającychS
+ 26
+722308 Operator obrabiarek sterowanych numerycznie
+722309 Operator obrabiarek zespołowych
+265402 Operator obrazu
+815601 Operator obuwniczych urządzeń szwalniczych
+818103 Operator odprężarek wyrobów szklanych
+817106 Operator pergaminiarki
+812109 Operator pieców do obróbki cieplnej
+817202 Operator pilarek do pozyskiwania tarcicy
+831208 Operator pociągowy
+814308 Operator pras do formowania wyrobów z masy papierniczej
+722103 Operator pras kuźniczych
+817203 Operator pras w produkcji drzewnej
+834309 Operator przenośników
+834310 Operator przenośników taśmowych
+815103 Operator przewijarek i skręcarek nitek
+352114 Operator radiowych urządzeń transmisyjnych
+311905 Operator reaktora
+813105 Operator reaktorów i autoklawów
+313903 Operator robotów i manipulatorów przemysłowych
+721202 Operator robotów spawalniczych
+351301 Operator sieci komputerowych
+732110 Operator skanera poligraficznego
+817204 Operator sklejarek płyt stolarskich
+817205 Operator skrawarek drewna
+817206 Operator spajarek okleiny i łuszczki
+313206 Operator spalarni odpadów komunalnych
+834204 Operator sprzętu ciężkiego
+351302 Operator sprzętu komputerowego
+352113 Operator sprzętu zdjęciowego (wózkarz)
+834208 Operator spycharki
+817207 Operator strugarek i frezarek do drewna
+834311 Operator suwnic (suwnicowy)
+351303 Operator systemów komputerowych
+754104 Operator systemów nurkowych
+321101 Operator systemów sterylizacji artykułów sanitarnych, sprzętu i aparatów medycznych
+834312 Operator śluzy, jazu, zapory i pompowni
+315305 Operator tankowania statków powietrznych
+352115 Operator telewizyjnych urządzeń transmisyjnych
+817107 Operator urządzeń bielących masy włókniste
+813106 Operator urządzeń destylacyjnych
+818104 Operator urządzeń do chemicznego polerowania szkła
+812110 Operator urządzeń do ciągłego odlewania stali
+814205 Operator urządzeń do cięcia folii i płyt
+813107 Operator urządzeń do ekstrakcji
+812201 Operator urządzeń do elektroforetycznego nakładania powłok
+812111 Operator urządzeń do elektrolitycznego uzyskiwania metali
+812202 Operator urządzeń do emaliowania
+811404 Operator urządzeń do formowania bloków i tynków gipsowych
+818105 Operator urządzeń do formowania i przetwórstwa włókna szklanego
+818106 Operator urządzeń do formowania wyrobów ceramicznych
+818107 Operator urządzeń do formowania wyrobów ogniotrwałych
+818108 Operator urządzeń do formowania wyrobów sylikatowych
+814206 Operator urządzeń do formowania wyrobów z tworzyw sztucznych
+818109 Operator urządzeń do gięcia szkła
+818110 Operator urządzeń do hartowania szkła
+817108 Operator urządzeń do impregnowania i powlekania wyrobów papierowych
+ 27
+815903 Operator urządzeń do klejenia elementów odzieży
+816004 Operator urządzeń do konfekcjonowania herbaty
+817208 Operator urządzeń do końcowej obróbki płyt
+813108 Operator urządzeń do krystalizacji
+818111 Operator urządzeń do matowania wyrobów szklanych
+817109 Operator urządzeń do mielenia masy włóknistej
+818302 Operator urządzeń do mycia, napełniania i zamykania butelek
+812203 Operator urządzeń do nakładania powłok galwanicznych
+812204 Operator urządzeń do natryskowego nakładania powłok
+813202 Operator urządzeń do obróbki błon i filmów fotograficznych
+813109 Operator urządzeń do obróbki cieplnej chemikaliów
+811302 Operator urządzeń do obróbki odwiertów wydobywczych
+818112 Operator urządzeń do obróbki płomieniowej szkła
+816005 Operator urządzeń do obróbki surowca mleczarskiego
+818901 Operator urządzeń do paletyzacji
+812205 Operator urządzeń do platerowania
+752304 Operator urządzeń do polerowania drewna
+815701 Operator urządzeń do prania, prasowania i chemicznego czyszczenia tekstyliów
+813110 Operator urządzeń do produkcji cementu
+813111 Operator urządzeń do produkcji chemikaliów nieorganicznych
+813112 Operator urządzeń do produkcji chemikaliów organicznych
+816006 Operator urządzeń do produkcji cukru
+813113 Operator urządzeń do produkcji dezynfektantów
+811405 Operator urządzeń do produkcji elementów z betonu komórkowego
+813114 Operator urządzeń do produkcji gazów technicznych
+813115 Operator urządzeń do produkcji katalizatorów
+816007 Operator urządzeń do produkcji koncentratów spożywczych
+816008 Operator urządzeń do produkcji majonezu i musztardy
+816009 Operator urządzeń do produkcji makaronu
+811406 Operator urządzeń do produkcji mas asfaltobetonowych
+813116 Operator urządzeń do produkcji mas bitumicznych
+813117 Operator urządzeń do produkcji materiałów półprzewodnikowych
+818113 Operator urządzeń do produkcji materiałów ściernych
+813118 Operator urządzeń do produkcji materiałów wybuchowych i pokrewnych
+816010 Operator urządzeń do produkcji napojów bezalkoholowych
+813119 Operator urządzeń do produkcji nawozów sztucznych
+813120 Operator urządzeń do produkcji ołówków
+816011 Operator urządzeń do produkcji pasz
+816012 Operator urządzeń do produkcji pieczywa
+816013 Operator urządzeń do produkcji piwa
+813121 Operator urządzeń do produkcji sadzy
+816014 Operator urządzeń do produkcji spirytusu
+813122 Operator urządzeń do produkcji sztucznej skóry
+813123 Operator urządzeń do produkcji środków piorących i myjących
+818114 Operator urządzeń do produkcji termosów
+816015 Operator urządzeń do produkcji tłuszczów roślinnych
+813124 Operator urządzeń do produkcji węgli aktywnych
+816016 Operator urządzeń do produkcji wina
+813125 Operator urządzeń do produkcji włókien chemicznych
+816017 Operator urządzeń do produkcji wyrobów cukierniczych
+813126 Operator urządzeń do produkcji wyrobów farmaceutycznych
+813127 Operator urządzeń do produkcji wyrobów kosmetycznych
+816018 Operator urządzeń do produkcji wyrobów mleczarskich
+816019 Operator urządzeń do produkcji wyrobów spirytusowych
+816020 Operator urządzeń do przerobu ziarna kakaowego
+816021 Operator urządzeń do przerobu ziarna zbóż
+ 28
+813128 Operator urządzeń do przeróbki ropy naftowej i gazu
+816026 Operator urządzeń do przetwórstwa drobiu
+816027 Operator urządzeń do przetwórstwa kawy
+816028 Operator urządzeń do przetwórstwa mięsa
+816029 Operator urządzeń do przetwórstwa owocowo-warzywnego
+816030 Operator urządzeń do przetwórstwa ryb
+814103 Operator urządzeń do przetwórstwa surowców gumowych
+816031 Operator urządzeń do przetwórstwa ziemniaczanego
+812206 Operator urządzeń do przygotowania powierzchni do nakładania powłok
+817110 Operator urządzeń do przygotowywania i dozowania dodatków masowych
+814207 Operator urządzeń do spieniania tworzyw sztucznych
+816022 Operator urządzeń do suszenia zbóż
+817111 Operator urządzeń do ścierania drewna
+814102 Operator urządzeń do wulkanizacji
+722310 Operator urządzeń do wyważania i centrowania
+812207 Operator urządzeń do zanurzeniowego nakładania powłok
+816023 Operator urządzeń elewatorów zbożowych
+813129 Operator urządzeń filtrujących
+813130 Operator urządzeń granulujących
+813131 Operator urządzeń homogenizujących
+815602 Operator urządzeń kaletniczych
+313207 Operator urządzeń klimatyzacyjnych i odpylających
+813132 Operator urządzeń koksowniczych
+816024 Operator urządzeń linii aseptycznego rozlewu w opakowania kartonowe
+834313 Operator urządzeń ładunkowych silosu
+813133 Operator urządzeń mieszających
+815603 Operator urządzeń montażowych obuwia
+352201 Operator urządzeń nadawczych telewizji kablowej
+313208 Operator urządzeń oczyszczania ścieków
+818303 Operator urządzeń pakujących
+812112 Operator urządzeń próżniowego odgazowania stali
+818115 Operator urządzeń przemysłu ceramicznegoS
+813134 Operator urządzeń przemysłu chemicznegoS
+818116 Operator urządzeń przemysłu szklarskiegoS
+816025 Operator urządzeń przemysłu tytoniowego
+812113 Operator urządzeń przygotowania wsadu
+352202 Operator urządzeń radiokomunikacyjnych
+817112 Operator urządzeń rębalni drewna
+813135 Operator urządzeń rozdrabniających
+817113 Operator urządzeń rozwłókniających
+813136 Operator urządzeń sorpcyjnych
+834109 Operator urządzeń technicznych stosowanych w leśnictwie
+818902 Operator urządzeń utylizacji surowców zwierzęcych
+313209 Operator urządzeń uzdatniania i demineralizacji wody
+812114 Operator urządzeń walcowni
+817114 Operator urządzeń warzelni
+815604 Operator urządzeń wykrawających elementy obuwia
+815904 Operator urządzeń wykrawających i nawarstwiających
+813137 Operator urządzeń wyparnych
+811407 Operator urządzeń wytwórczych mieszanek betonowych
+818304 Operator urządzeń znakujących
+834110 Operator wielooperacyjnych samojezdnych maszyn leśnych
+834314 Operator wieżowy przenośnika taśmowego
+813138 Operator wirówek
+413201 Operator wprowadzania danych
+814208 Operator wtryskarki
+ 29
+834315 Operator wywrotnic wagonowych
+313904 Operator zautomatyzowanej linii produkcyjnej
+721203 Operator zgrzewarek
+351202 Operator zintegrowanych systemów zarządzania zasobami firmy
+834111 Operator zrywkowych kolejek linowych
+834316 Operator żurawia jezdniowego
+834317 Operator żurawia wieżowego
+531102 Opiekun dzieci na przejściach dla pieszych
+516402 Opiekun dzikich zwierząt
+243302 Opiekun klienta
+532102 Opiekun medycznyS
+341202 Opiekun osoby starszejS
+341203 Opiekun w domu pomocy społecznejS
+516403 Opiekun zwierząt domowych
+532201 Opiekunka domowa
+531103 Opiekunka dzieci w drodze do szkoły
+531104 Opiekunka dziecięca domowa (niania)
+325905 Opiekunka dziecięcaS
+341204 Opiekunka środowiskowaS
+531107 Opiekunka w żłobku / klubie dziecięcym
+215204 Optoelektronik
+228601 Optometrysta
+731104 Optyk-mechanikS
+325301 Optyk okularowy
+343603 Organista
+333201 Organizator imprez rozrywkowych (organizator eventów)
+333203 Organizator imprez sportowych
+333202 Organizator imprez ślubnych
+524402 Organizator obsługi sprzedaży internetowej
+242105 Organizator transportu drogowego
+515202 Organizator usług domowych
+343401 Organizator usług kateringowych
+333204 Organizator usług konferencyjnych
+516302 Organizator usług pogrzebowych
+333205 Organizator widowni
+731207 Organomistrz
+731105 Ortopeda mechanik
+325906 OrtoptystkaS
+516201 Osoba do towarzystwa
+312101 Osoby dozoru ruchu w górnictwie odkrywkowym
+312102 Osoby dozoru ruchu w górnictwie otworowym
+312103 Osoby dozoru ruchu w górnictwie podziemnym
+229904 Osoba wykwalifikowana w przemyśle farmaceutycznym
+516904 Osobisty doradca do spraw zakupów (personal shopper)
+323010 Osteopata
+343909 Oświetlacz filmowy
+P
+932101 Pakowacz ręczny
+818204 Palacz gazowych kotłów centralnego ogrzewania
+818206 Palacz kotłów parowych
+911202 Palacz pieców zwykłych
+818205 Palacz wodnych rusztowych kotłów centralnego ogrzewania
+711403 Palowniczy
+731901 Pamiątkarz
+753302 Parasolnik
+ 30
+712203 Parkieciarz
+962903 Parkingowy
+111101 Parlamentarzysta
+752104 Parzelniczy drewna
+932904 Patroszacz ryb
+235921 Pedagog
+235911 Pedagog animacji kulturalnej
+235922 Pedagog mediów
+235919 Pedagog specjalny
+235912 Pedagog szkolny
+514204 Pedikiurzystka
+211304 Perfumiarz
+321102 Perfuzjonista
+514104 Perukarz
+713208 Piaskarz
+812115 Piecowy nagrzewania wsadu w walcowni
+812116 Piecowy pieca łukowego
+751204 PiekarzS
+222101 Pielęgniarka
+134205 Pielęgniarka oddziałowa
+222201 Pielęgniarka – specjalista organizacji i zarządzania
+222202 Pielęgniarka – specjalista pielęgniarstwa anestezjologicznego i intensywnej opieki
+222203 Pielęgniarka – specjalista pielęgniarstwa chirurgicznego
+222204 Pielęgniarka – specjalista pielęgniarstwa diabetologicznego
+222205 Pielęgniarka – specjalista pielęgniarstwa epidemiologicznego
+222206 Pielęgniarka – specjalista pielęgniarstwa geriatrycznego
+222207 Pielęgniarka – specjalista pielęgniarstwa kardiologicznego
+222208 Pielęgniarka – specjalista pielęgniarstwa nefrologicznego
+222209 Pielęgniarka – specjalista pielęgniarstwa neonatologicznego
+222210 Pielęgniarka – specjalista pielęgniarstwa neurologicznego
+222211 Pielęgniarka – specjalista pielęgniarstwa onkologicznego
+222212 Pielęgniarka – specjalista pielęgniarstwa operacyjnego
+222213 Pielęgniarka – specjalista pielęgniarstwa opieki długoterminowej
+222214 Pielęgniarka – specjalista pielęgniarstwa opieki paliatywnej
+222215 Pielęgniarka – specjalista pielęgniarstwa pediatrycznego
+222216 Pielęgniarka – specjalista pielęgniarstwa psychiatrycznego
+222217 Pielęgniarka – specjalista pielęgniarstwa ratunkowego
+222218 Pielęgniarka – specjalista pielęgniarstwa rodzinnego
+222219 Pielęgniarka – specjalista pielęgniarstwa środowiska nauczania i wychowania
+222220 Pielęgniarka – specjalista pielęgniarstwa w ochronie zdrowia pracujących
+222221 Pielęgniarka – specjalista pielęgniarstwa zachowawczego
+222222 Pielęgniarka – specjalista promocji zdrowia i edukacji zdrowotnej
+611312 Pielęgniarz trawników /murawy (greenkeeper)
+817210 Pilarz
+811408 Pilarz kamienia
+315306 Pilot balonu wolnego
+315211 Pilot morski
+315319 Pilot pionowzlotu
+315308 Pilot samolotowy zawodowy / liniowy
+315309 Pilot sterowcowy zawodowy
+315310 Pilot szybowcowy
+315311 Pilot śmigłowcowy zawodowy / liniowy
+315312 Pilot wiatrakowcowy zawodowy
+511301 Pilot wycieczek
+315212 Pilot żeglugi śródlądowej
+265207 Piosenkarz
+ 31
+343910 Pirotechnik
+264102 Pisarz
+432201 Planista produkcyjny
+343204 PlastykS
+731804 Plecionkarz
+722202 Płatnerz
+754105 Płetwonurek ratownik
+421402 Poborca skarbowy
+722104 Podkuwacz koni
+021001 Podoficer sił zbrojnych
+323014 Podolog
+264103 Poeta
+911203 Pokojowa
+752306 Polerowacz wyrobów z drewna
+335502 Policjant służy kryminalnej
+335504 Policjant służy prewencyjnej
+335505 Policjant służy wspomagającej
+263304 Politolog
+111102 Polityk (minister, sekretarz / podsekretarz stanu)
+223101 Położna
+134206 Położna oddziałowa
+223201 Położna – specjalista organizacji i zarządzania
+223202 Położna – specjalista pielęgniarstwa epidemiologicznego
+223203 Położna – specjalista pielęgniarstwa ginekologicznego
+223204 Położna – specjalista pielęgniarstwa neonatologicznego
+223205 Położna – specjalista pielęgniarstwa położniczego
+223206 Położna – specjalista pielęgniarstwa rodzinnego
+223207 Położna – specjalista promocji zdrowia i edukacji zdrowotnej
+532901 Pomoc apteczna
+532902 Pomoc dentystyczna
+911101 Pomoc domowa
+932905 Pomoc krawiecka
+941201 Pomoc kuchenna
+911204 Pomoc laboratoryjna
+931301 Pomocniczy robotnik budowlany
+931205 Pomocniczy robotnik drogowy
+921401 Pomocniczy robotnik konserwacji terenów zieleni
+921501 Pomocniczy robotnik leśny
+931206 Pomocniczy robotnik mostowy
+921101 Pomocniczy robotnik polowy
+921301 Pomocniczy robotnik przy uprawie roślin i hodowli zwierząt
+921402 Pomocniczy robotnik szklarniowy
+931207 Pomocniczy robotnik torowy
+921601 Pomocniczy robotnik w gospodarstwie rybackim
+921403 Pomocniczy robotnik w gospodarstwie sadowniczym
+921201 Pomocniczy robotnik w hodowli zwierząt
+921502 Pomocniczy robotnik w łowiectwie
+932911 Pomocniczy robotnik w przemyśle przetwórczym
+441101 Pomocnik biblioteczny
+932906 Pomocnik ciastkarza
+932907 Pomocnik lakiernika
+932908 Pomocnik mechanika
+932909 Pomocnik mleczarski
+932910 Pomocnik piekarza
+541306 Portier
+712204 Posadzkarz
+ 32
+331103 Pośrednik finansowy
+333301 Pośrednik pracy
+524906 Pośrednik usług medycznych
+244001 Pośrednik w obrocie nieruchomościami
+731606 Pozłotnik
+333302 Pracownik agencji pracy tymczasowej
+422101 Pracownik biura podróży
+422601 Pracownik biura przepustek
+332202 Pracownik centrum elektronicznej obsługi klienta
+422201 Pracownik centrum obsługi telefonicznej (pracownik call center)
+754401 Pracownik deratyzacji, dezynfekcji i dezynsekcji
+411002 Pracownik do spraw ewidencji ludności
+331201 Pracownik do spraw kredytów
+342310 Pracownik do spraw kultury fizycznej i sportu
+441501 Pracownik do spraw osobowych
+331202 Pracownik do spraw pożyczek
+331104 Pracownik do spraw produktów finansowych
+441502 Pracownik do spraw socjalnych
+431201 Pracownik do spraw statystyki
+431202 Pracownik do spraw ubezpieczeń
+334401 Pracownik do spraw ubezpieczeń medycznych
+333104 Pracownik działu logistyki
+343302 Pracownik galerii / muzeum
+422502 Pracownik informacji turystycznej
+421301 Pracownik instytucji pożyczkowej
+411003 Pracownik kancelaryjny
+421203 Pracownik kolektury
+421302 Pracownik lombardu
+311906 Pracownik obsługi bankomatów
+351405 Pracownik obsługi kampanii e-mailowych
+541317 Pracownik obsługi monitoringu
+331203 Pracownik obsługi klienta instytucji finansowej
+431301 Pracownik obsługi płacowej
+541307 Pracownik ochrony fizycznej
+754402 Pracownik ochrony roślin
+313210 Pracownik oczyszczania terenu z materiałów wybuchowych i niebezpiecznych
+341301 Pracownik parafialny
+911205 Pracownik pomocniczy obsługi hotelowejS
+351403 Pracownik pozycjonowania stron internetowych
+962201 Pracownik prac dorywczych
+815702 Pracownik pralni chemicznej
+933303 Pracownik przeprowadzkowy
+941101 Pracownik przygotowujący posiłki typu fast food
+432104 Pracownik punktu skupu
+933401 Pracownik rozkładający towar na półkach
+331105 Pracownik scentralizowanych systemów rozliczeniowych
+341205 Pracownik socjalny
+514205 Pracownik solarium
+432105 Pracownik sortowania przesyłek i towarów
+431203 Pracownik w biurze maklerskim
+612203 Pracownik wylęgarni drobiu
+333402 Pracownik wynajmu powierzchni komercyjnych
+341206 Pracownik zarządzania kryzysowego
+961103 Pracownik zbiórki odpadów
+912102 Praczka
+818117 Prasowacz ceramiki elektronicznej i elektrotechnicznej
+ 33
+912103 Prasowaczka ręczna
+532903 Preparator medyczny
+265604 Prezenter muzyczny (DJ / didżej)
+265605 Prezenter telewizyjny
+112017 Prezes
+311102 Probierz
+265403 Producent filmowy
+611311 Producent i zbieracz ziół
+265404 Producent teatralny
+265405 Producent telewizyjny
+611402 Producent żywności ekologicznej
+251401 Programista aplikacji
+251402 Programista aplikacji mobilnych
+251103 Projektant / architekt systemów teleinformatycznych
+251302 Projektant aplikacji multimedialnych, animacji i gier komputerowych
+252103 Projektant baz danych
+216301 Projektant biżuterii
+216305 Projektant ekspozycji towarów i usług (visual merchandiser)
+216604 Projektant grafiki
+216605 Projektant grafiki stron internetowych
+216303 Projektant mody
+241303 Projektant pakietów usług finansowych
+351404 Projektant stron internetowych (webmaster)
+311406 Projektant systemów alarmowych
+216304 Projektant wzornictwa przemysłowego
+261102 Prokurator
+333903 Promotor marki (trendsetter)
+321401 Protetyk słuchuS
+831106 Prowadzący maszyny do kolejowych robót budowlanych
+531106 Prowadzący rodzinny dom dziecka
+332203 Przedstawiciel handlowy
+243303 Przedstawiciel medyczny
+111103 Przedstawiciel władzy samorządowej (marszałek, starosta, radny)
+751402 Przetwórca owoców i warzyw
+751103 Przetwórca ryb
+511302 Przewodnik turystyczny górski
+511303 Przewodnik turystyczny miejski
+511304 Przewodnik turystyczny terenowy
+832204 Przewoźnik osób
+835007 Przewoźnik żeglugi śródlądowej
+731805 Przędzarz
+818118 Przygotowywacz mas ceramicznych
+731806 Przygotowywacz włókna
+263401 Psycholog
+263402 Psycholog biznesu
+263403 Psycholog kliniczny
+263404 Psycholog organizacji
+263405 Psycholog sportowy
+263406 Psycholog wychowawczy
+229909 Psychoonkolog
+229905 Psychoterapeuta
+229910 Psychotraumatolog
+612302 PszczelarzS
+812117 Pulpitowy wielkich pieców
+R
+ 34
+261103 Radca prawny
+261907 Radca Prokuratorii Generalnej Skarbu Państwa
+516901 Radiesteta
+541902 Ratownik górniczy
+541903 Ratownik górski
+325601 Ratownik medyczny
+541904 Ratownik morski
+541905 Ratownik pokładowy
+541906 Ratownik wodny
+352116 Realizator dźwięku
+352117 Realizator filmu wideo (wideofilmowiec)
+265406 Realizator programu telewizyjnego / radiowego
+352118 Realizator rekonstrukcji dźwięku
+343912 Realizator światła
+422602 Recepcjonista
+422401 Recepcjonista hotelowy
+264204 Redaktor programowy
+264207 Redaktor serwisu internetowego
+264104 Redaktor wydawniczy
+261908 Referendarz sądowy
+323011 Refleksolog
+122106 Regionalny kierownik sprzedaży
+422603 Rejestratorka medyczna
+112018 Rektor
+343913 Rekwizytor
+263207 Religioznawca
+752204 Renowator mebli artystycznych
+731807 Renowator tkanin unikatowych
+711103 Renowator zabytków architektury
+264205 Reporter radiowy / telewizyjny / prasowy
+265205 Reżyser dźwięku
+335202 Rewident kontroli skarbowej
+831209 Rewident taboru
+511206 Rewizor pociągów
+422102 Rezydent biura turystycznego
+265407 Reżyser filmowy
+265408 Reżyser teatralny
+265409 Reżyser telewizyjny / radiowy
+731504 Ręczny polerowacz szkła
+932102 Ręczny znakowacz wyrobów
+753108 Rękawicznik
+731810 Rękodzielnik wyrobów skórzanych
+731808 Rękodzielnik wyrobów włókienniczychS
+515303 Robotnik gospodarczy
+931101 Robotnik górniczy dołowy
+621002 Robotnik leśny
+933304 Robotnik magazynowy
+932912 Robotnik myjący części i zespoły
+931102 Robotnik naziemny w górnictwie
+961301 Robotnik oczyszczania miasta
+713304 Robotnik osuszania i odgrzybiania budowli
+961302 Robotnik placowy
+933305 Robotnik pracujący na rampie
+933306 Robotnik portowy (doker)
+711904 Robotnik rozbiórki budowli
+531105 Rodzic zastępczy
+ 35
+611202 Rolnik chmielarz
+611102 Rolnik łąkarz
+611103 Rolnik producent kwalifikowanych nasion rolniczych
+633001 Rolnik produkcji roślinnej i zwierzęcej pracujący na własne potrzeby
+631001 Rolnik produkcji roślinnej pracujący na własne potrzeby
+613003 RolnikS
+611403 Rolnik upraw mieszanych
+611104 Rolnik upraw polowych
+751104 Rozbieracz–wykrawacz
+951003 Rozlepiacz afiszy
+722203 Rusznikarz
+634001 Rybak pracujący na własne potrzeby
+622301 Rybak rybołówstwa morskiego
+622201 Rybak śródlądowyS
+933101 Rykszarz
+753703 Rymarz
+311801 Rysownik geodezyjny
+311802 Rysownik kartograficzny
+732111 Rysownik litograficzny
+732112 Rytownik
+242216 Rzecznik patentowy
+331503 Rzeczoznawca
+214210 Rzeczoznawca budowlany
+229106 Rzeczoznawca do spraw bezpieczeństwa i higieny pracy
+331504 Rzeczoznawca jakości handlowej artykułów rolno-spożywczych
+244002 Rzeczoznawca majątkowy
+213209 Rzeczoznawca rolniczy
+214930 Rzeczoznawca samochodowy
+731705 Rzeźbiarz w drewnie
+731607 Rzeźbiarz szkła
+343206 Rzeźbiarz w owocach i warzywach
+751105 Rzeźnik-wędliniarz
+S
+611203 Sadownik
+911206 Salowa
+532904 Sanitariusz szpitalny
+264105 Scenarzysta
+265106 Scenograf
+412001 Sekretarka
+334402 Sekretarka medyczna
+341102 Sekretarka notarialna
+334201 Sekretarka w kancelarii prawnej
+334305 Sekretarz konsularny
+343914 Sekretarz planu filmowego
+341103 Sekretarz sądowy
+751302 Serowar
+742208 Serwisant sprzętu komputerowego
+311907 Serwisant urządzeń medycznych
+261201 Sędzia
+342206 Sędzia sportowy
+532202 Siostra PCK
+731706 Sitarz
+421107 Skarbnik bankowy
+821907 Składacz sprzętu spadochronowego
+315314 Skoczek spadochronowy
+ 36
+263204 Socjolog
+513203 Sommelier
+932913 Sortowacz
+731408 Sortowacz-brakarz ceramiki
+731505 Sortowacz-brakarz szkła
+961202 Sortowacz odpadów komunalnych
+752105 Sortowacz materiałów drzewnych
+961201 Sortowacz surowców wtórnych
+721204 Spawacz
+242217 Specjalista administracji publicznej
+243105 Specjalista analizy i rozwoju rynku
+241304 Specjalista bankowości
+229103 Specjalista bezpieczeństwa i higieny pracy
+252901 Specjalista bezpieczeństwa oprogramowania
+252902 Specjalista bezpieczeństwa systemów teleinformatycznych
+243201 Specjalista etyki biznesu
+229202 Specjalista fizjoterapii
+263509 Specjalista do spraw adopcji
+216606 Specjalista do spraw animacji multimedialnej
+214108 Specjalista do spraw audytu zabezpieczenia
+242218 Specjalista do spraw badań społeczno-ekonomicznych
+241102 Specjalista do spraw controllingu
+242313 Specjalista do spraw czasowego zatrudniania pracowników
+229301 Specjalista do spraw dietetyki
+251201 Specjalista do spraw doskonalenia i rozwoju aplikacji
+242106 Specjalista do spraw doskonalenia organizacji
+214924 Specjalista do spraw ergonomii i projektowania form użytkowych
+241305 Specjalista do spraw factoringu
+242219 Specjalista do spraw integracji europejskiej
+242307 Specjalista do spraw kadr
+243304 Specjalista do spraw kluczowych klientów (key account manager)
+242107 Specjalista do spraw konsultingu
+242203 Specjalista do spraw komercjalizacji innowacyjnych technologii
+242308 Specjalista do spraw kultury firmy
+242108 Specjalista do spraw logistyki
+243106 Specjalista do spraw marketingu i handlu
+243108 Specjalista do spraw mediów interaktywnych
+243307 Specjalista do spraw obsługi posprzedażowej
+261910 Specjalista do spraw ochrony własności intelektualnej
+242220 Specjalista do spraw organizacji i rozwoju przemysłu
+242228 Specjalista do spraw organizacji i rozwoju sprzedaży
+242221 Specjalista do spraw organizacji i rozwoju transportu
+242113 Specjalista do spraw organizacji usług gastronomicznych, hotelarskich i turystycznych
+214925 Specjalista do spraw pakowania i opakowań
+242223 Specjalista do spraw planowania strategicznego
+242109 Specjalista do spraw pozyskiwania funduszy (fundraiser)
+243203 Specjalista do spraw public relations
+241103 Specjalista do spraw rachunkowości
+241104 Specjalista do spraw rachunkowości inwestycyjnej
+241105 Specjalista do spraw rachunkowości podatkowej
+241106 Specjalista do spraw rachunkowości zarządczej
+243107 Specjalista do spraw reklamy
+242309 Specjalista do spraw rekrutacji pracowników
+251202 Specjalista do spraw rozwoju oprogramowania systemów informatycznych
+251303 Specjalista do spraw rozwoju stron internetowych
+242402 Specjalista do spraw rozwoju zawodowego
+ 37
+243305 Specjalista do spraw sprzedaży
+242224 Specjalista do spraw stosunków międzynarodowych
+242403 Specjalista do spraw szkoleń
+241206 Specjalista do spraw tworzenia biznes planów
+241307 Specjalista do spraw ubezpieczeń majątkowych i osobowych
+241308 Specjalista do spraw ubezpieczeń społecznych
+241309 Specjalista do spraw ubezpieczeń zdrowotnych
+263407 Specjalista do spraw uzależnień od mediów cyfrowych
+242310 Specjalista do spraw wynagrodzeń
+242225 Specjalista do spraw zamówień publicznych
+242311 Specjalista do spraw zarządzania talentami
+235913 Specjalista do spraw zarządzania w oświacie
+262206 Specjalista informacji naukowej, technicznej i ekonomicznej
+229912 Specjalista inżynierii medycznej
+263510 Specjalista komunikacji społecznej
+214109 Specjalista kontroli jakości
+263409 Specjalista marketingu społecznego
+214926 Specjalista monitoringu systemów zabezpieczeń technicznych osób i mienia
+242110 Specjalista ochrony informacji niejawnych
+213303 Specjalista ochrony środowiska
+242226 Specjalista organizacji i zarządzania w ochronie zdrowia
+263305 Specjalista polityki społecznej
+263503 Specjalista poradnictwa psychospołecznego i rodzinnego
+263504 Specjalista pracy socjalnej
+229102 Specjalista promocji zdrowia i edukacji zdrowotnej
+229906 Specjalista psychoterapii uzależnień
+224001 Specjalista do spraw ratownictwa medycznego
+229911 Specjalista radiofarmacji
+263505 Specjalista resocjalizacji
+243109 Specjalista sprzedaży internetowej
+243402 Specjalista sprzedaży technologii i usług informatycznych
+251905 Specjalista systemów rozpoznawania mowy
+229907 Specjalista terapii uzależnień
+242312 Specjalista integracji międzykulturowej
+243306 Specjalista zaopatrzenia medycznego
+262207 Specjalista zarządzania informacją
+242227 Specjalista zarządzania kryzysowego
+241310 Specjalista zarządzania ryzykiem (underwriter)
+251902 Specjalista zastosowań informatyki
+229104 Specjalista zdrowia publicznego
+229105 Specjalista zdrowia środowiskowego
+229302 Specjalista żywienia człowieka
+333105 Spedytor
+265606 Spiker radiowy
+911208 Sprzątacz pojazdów
+911207 Sprzątaczka biurowa
+911102 Sprzątaczka domowa
+521101 Sprzedawca na targowisku / bazarze
+524403 Sprzedawca na telefon
+521102 Sprzedawca obwoźny z samochodu (vanseller)
+333904 Sprzedawca reklam internetowych
+522301 SprzedawcaS
+522302 Sprzedawca w branży mięsnej
+522303 Sprzedawca w branży przemysłowej
+522304 Sprzedawca w branży spożywczej
+524502 Sprzedawca w stacji paliw
+ 38
+962202 Statysta
+212004 Statystyk
+334307 Stenograf-protokolant
+315104 Stermotorzysta żeglugi śródlądowej
+835005 Sternik żeglugi śródlądowej
+817209 Sterowniczy linii sztaplowania i pakietowania tarcicy
+511102 Steward statku morskiego
+511101 Stewardesa / Steward
+813139 Stokażowy
+711503 Stolarz budowlany
+752206 Stolarz galanterii drzewnej
+752207 Stolarz mebli artystycznych i wzorcowych
+752208 Stolarz meblowy
+752209 Stolarz modelarz instrumentów muzycznych
+752205 StolarzS
+541101 Strażak
+541312 Strażnik gminny / miejski
+541907 Strażnik leśny
+541908 Strażnik łowiecki
+325507 Strażnik ochrony przyrody / środowiska
+541909 Strażnik rybacki
+541313 Strażnik straży marszałkowskiej
+541201 Strażnik w zakładzie dla nieletnich
+311933 Stroiciel fortepianów i pianinS
+722311 Strugacz
+752307 Strugacz drewna
+754201 Strzałowy (górnik strzałowy)
+712615 Studniarz
+343915 Sufler
+229404 Surdologopeda
+818119 Suszarnik ceramiki i wyrobów gipsowych
+752106 Suszarniowy drewna
+811103 Sygnalista szybowy
+112019 Syndyk
+211203 Synoptyk
+962904 Szaleciarz
+962905 Szatniarz
+731707 Szczotkarz
+343402 Szef kuchni (kuchmistrz)
+753606 Szewc
+712502 Szklarz
+712503 Szklarz budowlany
+712504 Szklarz pojazdów
+731409 Szkliwierz ceramiki
+711504 Szkutnik
+818120 Szlifierz ceramiki
+731303 Szlifierz kamieni szlachetnych i ozdobnych
+811409 Szlifierz kamienia
+752308 Szlifierz materiałów drzewnych
+722312 Szlifierz metali
+722402 Szlifierz-ostrzarz
+731506 Szlifierz-polerowacz szkła optycznego
+731304 Szlifierz-polerowacz wyrobów artystycznych
+731507 Szlifierz szkła gospodarczego i technicznego
+731508 Szlifierz szkła płaskiego
+713104 Szpachlarz
+ 39
+933307 Sztauer-trymer
+712302 Sztukator
+815301 Szwaczka maszynowa
+753303 Szwaczka ręczna
+731608 Szyldziarz
+315217 Szyper
+Ś
+722205 Ślusarz galanterii metalowej
+722206 Ślusarz narzędziowy
+722204 ŚlusarzS
+341302 Świecki krzewiciel wiary
+T
+333905 Tajemniczy klient (mystery shopper)
+721504 Takielarz
+331506 Taksator
+331508 Taksator ryzyka działalności firm
+832205 Taksówkarz
+516303 Tanatoprakser (balsamista)
+265302 Tancerz baletowy
+343701 TancerzS
+713105 Tapeciarz
+753403 Tapicer meblowy
+753402 TapicerS
+817211 Tartacznik
+343917 Tatuażysta
+334306 Technik administracjiS
+331402 Technik agrobiznesuS
+311908 Technik akustyk
+311103 Technik analitykS
+321201 Technik analityki medycznej
+325508 Technik analizy i monitoringu środowiska
+311203 Technik architekt
+314202 Technik architektury krajobrazuS
+441403 Technik archiwistaS
+311909 Technik automatyk
+311407 Technik automatyk sterowania ruchem kolejowymS
+315316 Technik awionikS
+325509 Technik bezpieczeństwa i higieny pracyS
+311910 Technik budownictwa okrętowegoS
+311204 Technik budownictwaS
+311205 Technik budownictwa wodnegoS
+311934 Technik budowy fortepianów i pianinS
+311911 Technik cyfrowych procesów graficznychS
+321402 Technik dentystycznyS
+325510 Technik dozymetrysta
+311206 Technik drogownictwaS
+311207 Technik dróg i mostów kolejowychS
+352119 Technik dźwięku
+331403 Technik ekonomistaS
+333106 Technik eksploatacji portów i terminaliS
+311302 Technik elektroenergetyk transportu szynowegoS
+311408 Technik elektronikS
+311411 Technik elektroniki i informatyki medycznejS
+311409 Technik elektroniki medycznej
+ 40
+321103 Technik elektroradiologS
+311304 Technik elektryk kolejowych sieci elektroenergetycznych
+311303 Technik elektrykS
+311305 Technik elektryk samochodowy
+311306 Technik elektryk urządzeń zabezpieczenia i sterowania ruchem kolejowym
+311307 Technik energetykS
+321301 Technik farmaceutycznyS
+325401 Technik fizjoterapii
+311912 Technik garbarzS
+311913 Technik gazownictwaS
+311104 Technik geodetaS
+311105 Technik geofizyk
+311106 Technik geologS
+325515 Technik gospodarki odpadami
+311701 Technik górnictwa odkrywkowegoS
+311702 Technik górnictwa otworowegoS
+311703 Technik górnictwa podziemnegoS
+522305 Technik handlowiecS
+314203 Technik hodowca koniS
+314204 Technik hodowca zwierząt
+422402 Technik hotelarstwaS
+311704 Technik hutnikS
+311107 Technik hydrolog
+343303 Technik informacji naukowej
+351203 Technik informatykS
+311914 Technik instrumentów muzycznych
+311208 Technik inżynierii środowiska i melioracjiS
+335503 Technik kryminalistyki
+311939 Technik konserwator urządzeń dźwigowych
+522306 Technik księgarstwaS
+314301 Technik leśnikS
+333107 Technik logistykS
+315406 Technik lotniskowych służb operacyjnych
+325402 Technik masażystaS
+311505 Technik mechanik budowy środków transportu
+311506 Technik mechanik eksploatacji środków transportu
+315317 Technik mechanik lotniczyS
+311508 Technik mechanik maszyn i urządzeń
+311509 Technik mechanik obróbki skrawaniem
+315105 Technik mechanik okrętowyS
+311510 Technik mechanik precyzyjny
+311504 Technik mechanikS
+311511 Technik mechanik urządzeń przemysłowych
+311512 Technik mechanizacji rolnictwaS
+311410 Technik mechatronikS
+311108 Technik meteorolog
+311109 Technik metrolog
+315214 Technik nawigator morskiS
+311915 Technik normowania pracy
+422103 Technik obsługi turystycznejS
+311916 Technik obuwnikS
+541315 Technik ochrony fizycznej osób i mieniaS
+325511 Technik ochrony środowiskaS
+311705 Technik odlewnikS
+314205 Technik ogrodnikS
+325302 Technik optykS
+ 41
+311917 Technik organizacji produkcji
+333906 Technik organizacji reklamyS
+321403 Technik ortopedaS
+311601 Technik papiernictwaS
+311513 Technik pojazdów samochodowychS
+311918 Technik poligraf
+311919 Technik pożarnictwaS
+411004 Technik prac biurowychS
+311935 Technik procesów drukowaniaS
+311936 Technik procesów introligatorskichS
+311706 Technik przeróbki kopalin stałychS
+314402 Technik przetwórstwa mleczarskiegoS
+311602 Technik przetwórstwa tworzyw sztucznych
+314206 Technik pszczelarzS
+431103 Technik rachunkowościS
+352120 Technik realizacji dźwiękuS
+352122 Technik realizacji nagrań i nagłośnieńS
+311210 Technik renowacji elementów architekturyS
+314207 Technik rolnikS
+314208 Technik rybactwa śródlądowegoS
+315215 Technik rybołówstwa morskiegoS
+333108 Technik spedytorS
+321104 Technik sterylizacji medycznejS
+311920 Technik systemów zabezpieczeń technicznych osób i mienia
+343205 Technik sztukatorstwa i kamieniarstwa artystycznego
+311921 Technik technologii ceramicznejS
+311603 Technik technologii chemicznejS
+311922 Technik technologii drewnaS
+311923 Technik technologii materiałów budowlanych
+311924 Technik technologii odzieżyS
+311925 Technik technologii szkłaS
+311604 Technik technologii środków farmaceutycznych
+311605 Technik technologii środków kosmetycznych
+311926 Technik technologii wyrobów skórzanychS
+314404 Technik technologii żywności – cukrownictwo
+314405 Technik technologii żywności – produkcja cukiernicza
+314406 Technik technologii żywności – produkcja koncentratów spożywczych
+314407 Technik technologii żywności – produkcja piekarsko-ciastkarska
+314408 Technik technologii żywności – przechowalnictwo chłodnicze i technologia żywności mrożonej
+314409 Technik technologii żywności – przetwórstwo fermentacyjne
+314410 Technik technologii żywności – przetwórstwo jajczarsko-drobiarskie
+314411 Technik technologii żywności – przetwórstwo mięsne
+314412 Technik technologii żywności – przetwórstwo mleczarskie
+314413 Technik technologii żywności – przetwórstwo owocowo-warzywne
+314414 Technik technologii żywności – przetwórstwo rybne
+314415 Technik technologii żywności – przetwórstwo surowców olejarskich
+314416 Technik technologii żywności – przetwórstwo zbożowe
+314417 Technik technologii żywności – przetwórstwo ziemniaczane
+314403 Technik technologii żywnościS
+351103 Technik teleinformatykS
+352203 Technik telekomunikacjiS
+311927 Technik transportu drogowegoS
+311928 Technik transportu kolejowegoS
+515203 Technik turystyki wiejskiejS
+351204 Technik tyfloinformatykS
+352121 Technik urządzeń audiowizualnych
+ 42
+311929 Technik chłodnictwa i klimatyzacjiS
+311940 Technik urządzeń dźwigowychS
+311930 Technik urządzeń i systemów energetyki odnawialnejS
+315501 Technik urządzeń ruchu lotniczego
+311209 Technik urządzeń sanitarnychS
+514105 Technik usług fryzjerskichS
+514207 Technik usług kosmetycznychS
+421108 Technik usług pocztowych i finansowychS
+311514 Technik utrzymania ruchu
+324002 Technik weterynariiS
+311707 Technik wiertnikS
+311931 Technik włókienniczych wyrobów dekoracyjnychS
+311932 Technik włókiennikS
+311606 Technik zabezpieczeń przeciwkorozyjnych
+315216 Technik żeglugi śródlądowejS
+322002 Technik żywienia i gospodarstwa domowego
+343404 Technik żywienia i usług gastronomicznychS
+215302 Technolog inżynierii telekomunikacyjnej
+712904 Technolog robót wykończeniowych w budownictwie
+214931 Technolog – programista obrabiarek
+422702 Teleankieter
+524404 Telemarketer
+263306 Teolog
+325201 Terapeuta środowiskowy
+325907 Terapeuta zajęciowyS
+712404 Termoizoler
+251903 Tester oprogramowania komputerowego
+251904 Tester systemów teleinformatycznych
+731809 Tkacz
+812118 Tłoczarz w metalu
+264304 Tłumacz
+264310 Tłumacz języka migowego
+722313 Tokarz / frezer obrabiarek sterowanych numerycznie
+752310 Tokarz w drewnie
+722314 Tokarz w metalu
+229908 Toksykolog
+818122 Topiarz fryty
+818123 Topiarz mas mineralnych
+818124 Topiarz szkła
+711605 Toromistrz
+214110 Towaroznawca
+933308 Tragarz
+722207 Traser
+732113 Trawiacz poligraficzny
+516404 Trener koni wyścigowych
+235920 Trener osobisty (coach, mentor, tutor)
+342207 Trener sportu
+516405 Treser psów
+343506 Treser zwierząt cyrkowych
+731708 Trzciniarz
+265901 Twórca ludowy
+712303 Tynkarz
+U
+751106 Ubojowy
+723204 Układacz-konserwator spadochronów
+ 43
+711606 Układacz nawierzchni drogowych
+952001 Uliczny sprzedawca produktów nieżywnościowych / żywności o długim terminie przydatności do spożycia
+521201 Uliczny sprzedawca żywności o krótkim terminie przydatności do spożycia
+951004 Uliczny zmywacz szyb samochodowych
+216403 Urbanista
+335103 Urzędnik do spraw imigracji
+335401 Urzędnik do spraw licencji
+335402 Urzędnik do spraw paszportów
+335403 Urzędnik do spraw udzielania pozwoleń na budowę
+335404 Urzędnik do spraw udzielania pozwoleń na prowadzenie działalności gospodarczej
+335203 Urzędnik podatkowy
+335301 Urzędnik ubezpieczeń społecznych
+831210 Ustawiacz
+752311 Ustawiacz maszyn do obróbki drewna
+722315 Ustawiacz maszyn do obróbki skrawaniem
+W
+933309 Wagowy
+325512 Weterynaryjny kontroler sanitarny
+751107 WędliniarzS
+752312 Wiertacz w drewnie
+811305 WiertaczS
+811304 Wiertacz studni
+722316 Wiertacz w metalu
+421403 Windykator
+712505 Witrażownik
+514208 Wizażystka / stylistka
+235109 Wizytator
+522103 Właściciel małego sklepu
+515204 Właściciel małego zakładu agroturystycznego / hotelarskiego / gastronomicznego
+265202 Wokalista
+933202 Wozak
+621003 Wozak zrywkarz
+962906 Woźny
+516102 Wróżbita
+814104 Wulkanizator
+814105 Wulkanizator taśm przenośnikowych
+962302 Wybieracz monet / żetonów z automatów
+234202 Wychowawca małego dziecka
+263506 Wychowawca w jednostkach penitencjarnych
+235914 Wychowawca w placówkach oświatowych, wsparcia dziennego, wychowawczych i opiekuńczych oraz
+instytucjonalnej pieczy zastępczej
+932914 Wydawca materiałów
+754202 Wydawca środków strzałowych
+524601 Wydawca posiłków / bufetowy
+811111 Wydobywca kruszywa i gliny
+235915 Wykładowca na kursach (edukator, trener)
+818125 Wypalacz surowców i wyrobów ogniotrwałych
+818126 Wypalacz wyrobów ceramicznych
+753505 Wyprawiacz skór futerkowych
+812119 Wytapiacz metali nieżelaznych
+812120 Wytapiacz stali, surówki i żelazostopów
+753304 Wytwórca abażurów
+731902 Wytwórca galanterii
+731903 Wytwórca sztucznych kwiatów
+111201 Wyższy urzędnik państwowy
+ 44
+111202 Wyższy urzędnik placówki dyplomatycznej
+111301 Wyższy urzędnik samorządowy
+Z
+731904 Zabawkarz
+532905 Zabiegowy balneologiczny
+263606 Zakonnik (bez święceń kapłańskich)
+721105 Zalewacz form
+961303 Zamiatacz
+332302 Zaopatrzeniowiec
+214933 Zarządca energią
+132407 Zawiadowca stacji
+342102 Zawodnik dyscypliny sportu
+111401 Zawodowy działacz organizacji komercyjnej / pracodawców
+111402 Zawodowy działacz organizacji politycznej
+111403 Zawodowy działacz organizacji pozarządowej
+111404 Zawodowy działacz organizacji zawodowej
+111405 Zawodowy działacz organizacji związkowej
+244003 Zarządca nieruchomości
+634002 Zbieracz owoców, ziół i innych roślin
+711404 Zbrojarz
+731609 Zdobnik ceramiki
+731610 Zdobnik szkła
+711203 ZdunS
+731106 ZegarmistrzS
+721209 Zgrzewacz
+323012 Zielarz-fitoterapeuta
+731305 Złotnik-jubilerS
+912903 Zmywacz graffiti
+941202 Zmywacz naczyń
+912301 Zmywacz okien (czyściciel szyb)
+516406 Zoofizjoterapeuta
+516407 Zoopsycholog
+831211 Zwrotniczy
+Ż
+753305 Żaglownik
+516304 Żałobnik
+031001 Żołnierz szeregowy
+343507 Żongler
+]
+</html>

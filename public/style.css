@@ -62,9 +62,9 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover, .dropdown:hover .dropbtn {
+  /* li a:hover, .dropdown:hover .dropbtn {
     background-color:#C51605;
-  }
+  } */
   
   li.dropdown {
     display: inline-block;
@@ -116,4 +116,7 @@ ul {
   #email{
     border-radius: 10%;
 
+  }
+  .szukaj_fachowca{
+    padding-top: 10px;
   }
