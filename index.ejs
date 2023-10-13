@@ -3,16 +3,23 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./style.css">
         <title> Lista zawodow</title>
     </head>
     <body>
-        <ul>
-            <% items.forEach((zawody) => { %>
-                <li>
-                    <%= zawody %>
-                </li>
-            <% }); %>
-        </ul>
+        <form action="/lista" method="post" class="submit">
+            <button type="submit" value="fachowiec" name="type"></button>
+        </form>
+        <div id="listContainer" class="hidden">
+            <% if(locals.list) {%>
+                <h2 id ="listaTitle">
+                    <%= lista.imie %>
+                </h2>
+            <% } else {%>
+            <h2>Znajdz swojego fachowca</h2>
+            <% } %>
+        </div>
+       
         
     </body>
 
