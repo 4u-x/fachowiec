@@ -1,6 +1,4 @@
-.container_1 {
-  position: relative; 
-}
+ 
 h1{
     justify-content: center;
         text-align: center;
@@ -39,7 +37,7 @@ body{
   gap: 30px;
 
 }
-.wrapper {
+.header {
   display: flex;
   justify-content: space-between;
   background-color: #CECE5A;
@@ -61,6 +59,30 @@ body{
 .btn {
   background-color:#FD8D14;
 }
+
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    margin-left: 600px;
+   }
+
+   input {
+  
+    -webkit-appearance: none; /* jest używany w CSS do usunięcia wszystkich domyślnych stylów przeglądarki dla danego elementu */
+    appearance:none;
+    border: 0;
+    font-size: 0.9rem;
+    background:#C51605;
+    padding: 1rem;
+    color: white;
+   }  
+   
+  
+
+  
+  
+
 
 
 

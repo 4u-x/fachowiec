@@ -11,7 +11,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 8000;
 app.set('view engine', 'ejs');
-app.set('public', path.join(__dirname, 'public'));
+app.set('views', path.join(__dirname, 'views'));
 
 
 
@@ -22,49 +22,37 @@ const listaJson = {"specjalisci":[{"id":1,"imie":"Anna","nazwisko":"Kowalska","s
 // var isUserAuthorized = false;  //by defoult jest nie autoryzowny
  
 
-app.use(express.static(path.join(__dirname, "public"))); //w ten sposob wysylamy statyczne dane(html)
+app.use(express.static(path.join(__dirname, "views"))); //w ten sposob wysylamy statyczne dane(html)
 app.use(bodyParser.urlencoded({ extended: true })); //body-parser odczytuje wpisy usera
 
 
 
-
- 
-
-// function passwordCheck(req, res, next) {
-//   const password = req.body["password"]; //dodajemy password tak jak  w HTML
-//   if (password === "Olivia16") {
-//     isUserAuthorized = true;
-//   }
-//   next(); //nigdy nie zapominaj
-// }
-// app.use(passwordCheck);
-
-// Routing i renderowanie widoku EJS
-//home page
-let data;
 app.get('/', (req, res) => {
- res.render("index.ejs",{lista: data});
+ res.sendFile(path.join(__dirname + "/views.index.html"));
 });
-// app.get("/header", (req, res) => {
-//   res.render("header.ejs")
-// });
+
+
+app.post('/submit', (req, res)=>{
+res.render("index.ejs")
+});
 
 
 
 
-app.post("/lista", (req, res) => {
-  // if (isUserAuthorized) {
+
+// app.post("/lista", (req, res) => {
+//   // if (isUserAuthorized) {
     
-   switch(req.body.type){
+//    switch(req.body.type){
     
-    case "fachowiec":
-      data=JSON.parse(listaJSON)
-      break;
-      default:
-        break;
-   }
-   res.redirect("/")
-  });
+//     case "fachowiec":
+//       data=JSON.parse(listaJson)
+//       break;
+//       default:
+//         break;
+//    }
+//    res.redirect("/")
+//   });
 
 
 app.listen(port, () => {
