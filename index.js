@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'));
 const listaJson = {"specjalisci":[{"id":1,"imie":"Anna","nazwisko":"Kowalska","specjalizacja":"Dermatologia"},{"id":2,"imie":"Jan","nazwisko":"Nowak","specjalizacja":"Kardiologia"},{"id":3,"imie":"Piotr","nazwisko":"Wisniewski","specjalizacja":"Ortopedia"},{"id":4,"imie":"Maria","nazwisko":"Zawisza","specjalizacja":"Neurologia"},{"id":5,"imie":"Lucas","nazwisko":"Brown","specjalizacja":"Gastroenterologia"},{"id":6,"imie":"Emily","nazwisko":"Johnson","specjalizacja":"Pediatria"},{"id":7,"imie":"Oliver","nazwisko":"Smith","specjalizacja":"Oncologia"},{"id":8,"imie":"Sophia","nazwisko":"Lee","specjalizacja":"Endokrynologia"},{"id":9,"imie":"Michael","nazwisko":"Williams","specjalizacja":"Psychiatria"},{"id":10,"imie":"Emma","nazwisko":"Davis","specjalizacja":"Reumatologia"},{"id":11,"imie":"Ethan","nazwisko":"Garcia","specjalizacja":"Urologia"},{"id":12,"imie":"Ava","nazwisko":"Martinez","specjalizacja":"Okulistyka"},{"id":13,"imie":"Mason","nazwisko":"Hernandez","specjalizacja":"Laryngologia"},{"id":14,"imie":"Isabella","nazwisko":"Lopez","specjalizacja":"Alergologia"}]}
 
 
-// var isUserAuthorized = false;  //by defoult jest nie autoryzowny
+
  
 
 app.use(express.static(path.join(__dirname, "views"))); //w ten sposob wysylamy statyczne dane(html)
@@ -35,24 +35,6 @@ app.get('/', (req, res) => {
 app.post('/submit', (req, res)=>{
 res.render("index.ejs")
 });
-
-
-
-
-
-// app.post("/lista", (req, res) => {
-//   // if (isUserAuthorized) {
-    
-//    switch(req.body.type){
-    
-//     case "fachowiec":
-//       data=JSON.parse(listaJson)
-//       break;
-//       default:
-//         break;
-//    }
-//    res.redirect("/")
-//   });
 
 
 app.listen(port, () => {
