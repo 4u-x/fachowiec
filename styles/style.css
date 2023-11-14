@@ -1,94 +1,70 @@
-.etap-jeden{
-    background-color:#17594A;
-    height: 100vh;
-  }
-  .tekst-jeden{
-      display: flex;
-      height: 100vh;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Libre Baskerville', serif;
-      font-family: 'Tilt Prism', cursive;
-      color: aliceblue;
-      margin-bottom: 30px;
-      padding-bottom: 10px;
-  
-  
-  }
-  .zmiana-koloru{
-    color:yellowgreen;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Libre Baskerville', serif;
-    
-  
-  }
-  .nav-link{
-    font-family: 'Libre Baskerville', serif;
-      font-family: 'Tilt Prism', cursive;
-    color: aliceblue;
-  }
-  .navbar-brand{
-    color:yellowgreen ;
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Libre Baskerville', serif;
-  }
-  .szukac{
-    background-color:yellowgreen;
-  
-  }
-  .etap-dwa{
-    height: 50vh;
-    background-color: #17594A;
-    
-  
-  }
-  
-  .gory{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0px;
-   
-    
-  }
-  .etap-trzy{
-    height: 50vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 60px;
-  
-  }
-  .etap-cztery{
-    height: 100vh;
-    background-color: #8EAC50;
-  }
-  
-  .foto_ana{
-    display: flex;
-    justify-content: center;
-    padding-top: 30px;
-  }
-    .podpis_foto_ana{
-      text-align: center;
-  
-      font-family: 'Dancing Script', cursive;
-  font-family: 'Libre Baskerville', serif;
-  font-family: 'Tilt Prism', cursive;
-  
-    }
-  
-    
-  
-  .olsnienie{
-    color: azure;
-  
-  }
-  .bottom_rules{
-  
-    font-family: 'Dancing Script', cursive;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'Tilt Prism', cursive;
-  }
-    
-  
+
+/* /* body{
+  background-color: #FFE17B;
+  margin: 0;
+  padding: 0;
+  height: 100vk;
+ 
+} */
+/* .podsumowanie{
+width: 100%;
+display: flex;
+position: fixed;
+justify-content: center;
+text-align: center;
+bottom: 50px;
+gap: 30px;
+background-color:#CECE5A;
+}
+.firma{
+width: 100%;
+display: flex;
+position: fixed;
+justify-content: center;
+text-align: center;
+bottom: 5px;
+gap: 30px;
+
+}
+.header {
+display: flex;
+justify-content: space-between;
+background-color: #CECE5A;
+}
+
+.menu, .account {
+display: flex;
+list-style-type: none;
+margin: 0;
+padding: 5px 10px;
+}
+
+.menu {
+justify-content: flex-end;  
+gap: 10px;  
+}
+
+
+.btn {
+background-color:#FD8D14;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  margin-left: 600px;
+ }
+
+ input {
+
+  -webkit-appearance: none; /* jest używany w CSS do usunięcia wszystkich domyślnych stylów przeglądarki dla danego elementu */
+  /* appearance:none;
+  border: 0;
+  font-size: 0.9rem;
+  background:#C51605;
+  padding: 1rem;
+  color: white;
+ }  
+   */ 
+

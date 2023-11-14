@@ -1,21 +1,14 @@
-html,
-body {
-  padding: 0;
+
+
+  body{
+  background-color: #FFE17B;
   margin: 0;
-  font-family:
-    Inter,
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  padding: 0;
+  height: 100vk;
+ 
 }
+
+
 
 a {
   color: inherit;

@@ -3,15 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "type": "module",
-
   "scripts": {
     "build": "next build",
     "dev": "next dev",
     "start": "next start"
-  
-    
-     
-    
   },
   "author": "Sebastian",
   "license": "ISC",
@@ -30,11 +25,4 @@
     "react-dom": "^18.2.0",
     "require": "^0.4.4"
   }
-  
 }
-
-    
-  
-
-  
-
