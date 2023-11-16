@@ -1,6 +1,5 @@
-// pages/auth.js
 import React, { useState } from 'react';
-
+import Link from 'next/link';
 export default function AuthPage() {
     const [isLogin, setIsLogin] = useState(true);
 
@@ -12,6 +11,9 @@ export default function AuthPage() {
 
     return (
         <div>
+       <h2>
+        <Link href="/">← Back to home</Link>
+      </h2>
             <h1>{isLogin ? 'Login' : 'Sign Up'}</h1>
             <form onSubmit={handleSubmit}>
                 {!isLogin && (
@@ -36,6 +38,8 @@ export default function AuthPage() {
             <button onClick={() => setIsLogin(!isLogin)}>
                 Switch to {isLogin ? 'Sign Up' : 'Login'}
             </button>
+            
+       
         </div>
     );
 }

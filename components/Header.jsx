@@ -1,35 +1,28 @@
-import React from "react";
 import Link from 'next/link';
 
-function Header(){
-   
-    return <nav className="navbar navbar-expand-lg navbar-light bg-light">
-     <a className="navbar-brand" href="#">Navbar</a>
-   
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-    <div className="collapse navbar-collapse" id="navbarNav">
-      <ul className="navbar-nav">
-        <li className="nav-item active">
-          <a className="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li className="nav-item">
-        <Link href="/posts/Forma">
-                            <span className="nav-link">Forma</span>
+export default function Header() {
+    return (
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <Link href="/">
+                            <>Home</>
                         </Link>
-        </li>
-        <li className="nav-item">
-        <Link href="/posts/Login">
-                            <span className="nav-link">Login/SignUp</span>
+                    </li>
+                    <li>
+                        <Link href="/posts/Login">
+                            <>Login</>
                         </Link>
-        </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+                    </li>
+                    <li>
+                        <Link href="/posts/form">
+                            <>Forma</>
+                        </Link>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    );
 }
 
-export default Header;

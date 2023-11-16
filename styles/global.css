@@ -1,6 +1,7 @@
 
 
-  body{
+  .body{
+    
   background-color: #FFE17B;
   margin: 0;
   padding: 0;
@@ -10,16 +11,3 @@
 
 
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
