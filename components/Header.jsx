@@ -1,28 +1,32 @@
 import Link from 'next/link';
 
+
 export default function Header() {
     return (
+        <div className='buttons'>
         <header>
             <nav>
-                <ul>
+                <ul className="d-flex list-unstyled">
                     <li>
                         <Link href="/">
-                            <>Home</>
+                            <><button class="btn btn-info rounded-pill px-3" type="button">Home</button></>
                         </Link>
                     </li>
                     <li>
-                        <Link href="/posts/Login">
-                            <>Login</>
+                        <Link href="/posts/SignUp">
+                            <><button class="btn btn-info rounded-pill px-3" type="button">Login</button></>
                         </Link>
                     </li>
                     <li>
                         <Link href="/posts/form">
-                            <>Forma</>
+                            <><button class="btn btn-info rounded-pill px-3" type="button">Forma</button></>
                         </Link>
                     </li>
                 </ul>
             </nav>
+           
         </header>
+        </div>
     );
 }
 

@@ -1,14 +1,8 @@
 import React from "react";
 import Head from 'next/head';
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import App from "../components/app";
 import Script from 'next/script';
-import styles from "../styles/Home.module.css"; 
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
-
+import Main from "../components/Main"
 
 export default function Home() {
   return (
@@ -22,14 +16,8 @@ export default function Home() {
         strategy="lazyOnload"
         onLoad={() => console.log(`script loaded correctly, window.FB has been populated`)}
       />
-
-      <Header/>
-      <h1 className={styles.fach}>Dobry Fachowiec</h1>
-
-      <footer className={styles.footer}>
-        <Footer />
-      </footer>
-      </>
-    );
+       <Main/>
+      <App/>
+    </>
+  );
 }
-

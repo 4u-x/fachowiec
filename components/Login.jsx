@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
-export default function AuthPage() {
+import styles from "../styles/Login.module.css";
+
+
+
+
+export default function Login() {
     const [isLogin, setIsLogin] = useState(true);
 
     const handleSubmit = (event) => {
@@ -10,10 +14,7 @@ export default function AuthPage() {
     };
 
     return (
-        <div>
-       <h2>
-        <Link href="/">← Back to home</Link>
-      </h2>
+        <div className={styles.loginCenter}>
             <h1>{isLogin ? 'Login' : 'Sign Up'}</h1>
             <form onSubmit={handleSubmit}>
                 {!isLogin && (
@@ -33,13 +34,11 @@ export default function AuthPage() {
                     placeholder="Password" 
                     required 
                 />
-                <button type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
+                <button className={styles.login} type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
             </form>
             <button onClick={() => setIsLogin(!isLogin)}>
                 Switch to {isLogin ? 'Sign Up' : 'Login'}
             </button>
-            
-       
-        </div>
+            </div>
     );
 }

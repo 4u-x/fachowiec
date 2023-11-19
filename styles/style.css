@@ -26,45 +26,15 @@ bottom: 5px;
 gap: 30px;
 
 }
-.header {
-display: flex;
-justify-content: space-between;
-background-color: #CECE5A;
-}
-
-.menu, .account {
-display: flex;
-list-style-type: none;
-margin: 0;
-padding: 5px 10px;
-}
-
-.menu {
-justify-content: flex-end;  
-gap: 10px;  
-}
 
 
-.btn {
-background-color:#FD8D14;
-}
 
 
-footer {
-  position: absolute;
-  bottom: 0;
-  margin-left: 600px;
- }
 
- input {
 
-  -webkit-appearance: none; /* jest używany w CSS do usunięcia wszystkich domyślnych stylów przeglądarki dla danego elementu */
-  /* appearance:none;
-  border: 0;
-  font-size: 0.9rem;
-  background:#C51605;
-  padding: 1rem;
-  color: white;
- }  
-   */ 
+
+
+
+
+
 

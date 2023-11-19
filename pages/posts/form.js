@@ -1,12 +1,16 @@
 import React from "react";
 import Forma from "../../components/Forma"
-import Footer from "../../components/Footer"
+import App from "../../components/app"
+
+
+
 
 
 export default function Form(){
     return <div>
      <Forma/>
-    <Footer />
+    <App/>
+    
       
      
       </div>

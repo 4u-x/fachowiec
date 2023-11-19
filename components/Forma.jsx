@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
-import Link from 'next/link';
+import styles from "../styles/Forma.module.css"
+
+
+
 export default function Forma() {
     // Create state variables for each input field
     const [name, setName] = useState('');
@@ -17,10 +20,8 @@ export default function Forma() {
     };
 
     return (
+        <div className={styles.formaCenter}>
         <form onSubmit={handleSubmit}>
-        <h2>
-        <Link href="/">← Back to home</Link>
-      </h2>
             <div>
                 <label htmlFor="name">Wpisz imię i nazwisko</label>
                 <input
@@ -86,6 +87,7 @@ export default function Forma() {
             </div>
             <button type="submit">ZAREJESTRUJ SIĘ</button>
         </form>
+        </div>
     );
 }
 
