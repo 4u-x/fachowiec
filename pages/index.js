@@ -2,7 +2,7 @@ import React from "react";
 import Head from 'next/head';
 import App from "../components/app";
 import Script from 'next/script';
-import Main from "../components/Main"
+
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
         strategy="lazyOnload"
         onLoad={() => console.log(`script loaded correctly, window.FB has been populated`)}
       />
-       <Main/>
+      
       <App/>
     </>
   );

@@ -22,6 +22,11 @@ export default function Header() {
                             <><button class="btn btn-info rounded-pill px-3" type="button">Forma</button></>
                         </Link>
                     </li>
+                    <li>
+                        <Link href="/posts/nowaForma">
+                            <><button class="btn btn-info rounded-pill px-3" type="button">Mui</button></>
+                        </Link>
+                    </li>
                 </ul>
             </nav>
            

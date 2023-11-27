@@ -11,9 +11,5 @@ export default function Form(){
      <Forma/>
     <App/>
     
-      
-     
-      </div>
-     
-    
-}
+    </div>
+   }
