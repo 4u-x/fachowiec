@@ -40,17 +40,22 @@ font-family: 'Edu SA Beginner', cursive;
 font-family: 'Libre Baskerville', serif;
 font-family: 'Tilt Prism', cursive;
 }
-
-
-.footer{
+.footer {
   display: flex;
-  position: absolute;
+  justify-content: center; 
+  align-items: center;  
+  position: fixed;
+  left: 0;
+  right: 0;
   bottom: 0;
-  margin-left: 600px;
+  margin: 0 auto;
 }
-/* styles/globals.css */
+
+
+
+
 .header-nav li {
-  margin-right: 40px; /* Dodaje odstęp między przyciskami */
+  margin-right: 40px; 
 }
 
 
