@@ -1,7 +1,8 @@
 .formaCenter{
+  display: grid;
     justify-content: center;
     text-align: center;
-    color: #C51605;
+    color:blueviolet;
     margin-top: 150px;
     background-color: #FFE17B; 
   }
